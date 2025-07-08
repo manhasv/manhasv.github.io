@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+    <!-- Header Section -->
+    <header class="container-card">
+        <nav class="flex justify-between items-center">
+            <h1 class="text-4xl font-extrabold text-indigo-700 rounded-lg p-2">My Portfolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="text-lg font-medium text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">About</a></li>
+                <li><a href="#projects" class="text-lg font-medium text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">Projects</a></li>
+                <li><a href="#contact" class="text-lg font-medium text-gray-700 hover:text-indigo-600 transition duration-300 ease-in-out rounded-md px-3 py-1">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container-card">
+        <!-- About Section Placeholder -->
+        <section id="about" class="mb-12">
+            <h2 class="section-heading">About Me</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Hello! I'm a passionate developer with a focus on creating impactful web applications.
+                I enjoy learning new technologies and solving challenging problems.
+                This is a placeholder for your introduction. You can talk about your skills, experience, and what you're looking for.
+            </p>
+        </section>
+
+        <!-- Projects Section Placeholder -->
+        <section id="projects" class="mb-12">
+            <h2 class="section-heading">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Project Title 1</h3>
+                    <p class="text-gray-600 text-sm mb-4">A brief description of your first project. Highlight its key features and technologies used.</p>
+                    <a href="#" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-600 transition duration-300 ease-in-out">View Project</a>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Project Title 2</h3>
+                    <p class="text-gray-600 text-sm mb-4">A brief description of your second project. What problem did it solve? What did you learn?</p>
+                    <a href="#" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-600 transition duration-300 ease-in-out">View Project</a>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                    <h3 class="text-xl font-semibold text-indigo-600 mb-2">Project Title 3</h3>
+                    <p class="text-gray-600 text-sm mb-4">Description for your third project. Feel free to add more project cards as needed.</p>
+                    <a href="#" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-600 transition duration-300 ease-in-out">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section Placeholder -->
+        <section id="contact" class="mb-12">
+            <h2 class="section-heading">Contact Me</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Feel free to reach out to me! You can replace this with a contact form or simply list your email and social media links.
+            </p>
+            <div class="flex space-x-4">
+                <a href="mailto:your.email@example.com" class="text-indigo-600 hover:text-indigo-800 transition duration-300 ease-in-out text-lg font-medium">Email</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-indigo-600 hover:text-indigo-800 transition duration-300 ease-in-out text-lg font-medium">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank" class="text-indigo-600 hover:text-indigo-800 transition duration-300 ease-in-out text-lg font-medium">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="container-card text-center text-gray-600 text-sm">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
