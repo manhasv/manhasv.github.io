@@ -1,150 +1,75 @@
-<!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Porfolio of Manh Tran</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="landing is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <header class="bg-white shadow-md">
+    <div class="max-w-4xl mx-auto px-4 py-6 flex items-center justify-between">
+      <h1 class="text-2xl font-bold">Your Name</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <!-- Hero Section -->
+    <section class="flex flex-col items-center text-center">
+      <img src="https://via.placeholder.com/150" alt="Profile" class="w-32 h-32 rounded-full shadow-md mb-4">
+      <h2 class="text-3xl font-semibold">Your Name</h2>
+      <p class="text-lg text-gray-600">Computer Science Student | Backend & Security Enthusiast</p>
+    </section>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Manh Tran</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="Transcript - Manh Tran.pdf">My Transcript</a></li>
-											<li><a href="Resume - Manh Tran.pdf">My resume</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
-					</header>
+    <!-- About Section -->
+    <section id="about" class="mt-12">
+      <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+      <p class="text-gray-700 leading-relaxed">
+        I'm a 4th-year CS student at Northeastern University from Vietnam.
+        Passionate about backend systems, test engineering, and security. I love building robust, scalable systems
+        and solving real-world problems with code.
+      </p>
+    </section>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>Hello there</h2>
-							<p>A porfolio presented by<br />
-							Manh Tran<br /></p>
-							<ul class="actions special"></ul>
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
+    <!-- Projects Section -->
+    <section id="projects" class="mt-12">
+      <h3 class="text-2xl font-semibold mb-4">Projects</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Project 1 -->
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-lg font-bold">ExpressJS + RabbitMQ System</h4>
+          <p class="text-sm text-gray-600">A microservice architecture using Docker, RabbitMQ, and Express.js to coordinate task processing between services.</p>
+          <a href="https://github.com/yourusername/project1" class="text-blue-600 hover:underline text-sm">View on GitHub</a>
+        </div>
+        <!-- Project 2 -->
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-lg font-bold">Real-Time Job Trends Tracker</h4>
+          <p class="text-sm text-gray-600">A Python app that scrapes job data and visualizes tech trends using matplotlib and Plotly.</p>
+          <a href="https://github.com/yourusername/job-trends" class="text-blue-600 hover:underline text-sm">View on GitHub</a>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>This is the showcase of my programming projects<br />
-									over the years</h2>
-							</header>
-						</div>
-					</section>
+    <!-- Contact / Resume Section -->
+    <section id="contact" class="mt-12">
+      <h3 class="text-2xl font-semibold mb-4">Resume & Contact</h3>
+      <p class="mb-2">
+        📄 <a href="resume.pdf" class="text-blue-600 hover:underline">Download My Resume</a>
+      </p>
+      <p>Email: <a href="mailto:your.email@example.com" class="text-blue-600">your.email@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" class="text-blue-600">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourname" class="text-blue-600">linkedin.com/in/yourname</a></p>
+    </section>
+  </main>
 
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="images/marble.png" alt="" /></div><div class="content">
-								<h2>Marble Solitaire</h2>
-								<p>Presenting an UI for a English Marble Solitaire game of size 5 <br />
-								This is a perfect practice MVC design as well as the command pattern in Java</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/Image.png" alt="" /></div><div class="content">
-								<h2>Image Processor</h2>
-								<p>A basic UI for a image processor similar to what we commonly have on our phone with basic functionalities <br />
-								Utilizing functions objects and practicing GUI</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/Maze.jpg" alt="" /></div><div class="content">
-								<h2>Maze</h2>
-								<p>An auto-generated maze that bases on the user's input of its size and can solve itself if needed</p>
-							</div>
-						</section>
-					</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>My skills</h2>
-							</header>
-							<ul class="features">
-								<li class="icon brands fa-github">
-									<h3>Frameworks</h3>
-									<p> JUnit | Visual Studio Code | Git | <br />
-										npm | Nodejs | React</p>
-								</li>
-								<li class="icon solid fa-code">
-									<h3>Languages</h3>
-									<p>Java | Racket | HTML | CSS | <br />
-										Python | C | C# | JavaScript | Lua</p>
-								</li>
-								<li class="icon solid fa-laptop">
-									<h3>Technologies</h3>
-									<p>Eclipse | IntelliJ | Microsoft Office | <br />
-										Unity | Blender | Aseprite |</p>
-								</li>
-								<li class="icon solid fa-book">
-									<h3>Related coursework</h3>
-									<p>Object-Oriented Design | <br />
-										Algorithms and Data |<br />
-										Logic and Computation | <br />
-										Fundamentals of Computer Sciences</p>
-								</li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>Thank you!</h2>
-								<p>My social media:
-								</p>
-								<p><ul class="icons">
-									<li><a href="https://www.linkedin.com/in/manh-tran-170b34250/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://github.com/manhasv" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								</ul></p>
-							</header>
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
-			</div>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  <footer class="text-center text-sm text-gray-500 py-6">
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+</body>
 </html>
