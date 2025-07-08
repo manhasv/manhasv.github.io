@@ -1,0 +1,174 @@
+/* General Body and Font Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* Set a default body font weight, e.g., 400 (Regular) */
+    font-style: normal; /* Ensure normal font style */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Minimalist Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Animations (keeping them subtle) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.1s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Reusable Component Styles */
+
+/* Base style for all main content sections */
+.page-section {
+    scroll-snap-align: start; /* snap-start */
+    min-height: 100vh; /* min-h-screen */
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    justify-content: center; /* justify-center */
+    padding-top: 4rem; /* py-16 */
+    padding-bottom: 4rem; /* py-16 */
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    text-align: center; /* text-center */
+    flex-direction: column; /* flex-col (default for most sections) */
+}
+
+/* Override flex-direction for specific sections if needed, e.g., Hero */
+.page-section.hero-section {
+    flex-direction: column; /* Ensure it remains column on mobile for the split layout */
+}
+
+
+/* Wrapper for content within sections (e.g., max-width, w-full) */
+.section-content-wrapper-default {
+    max-width: 48rem; /* max-w-3xl */
+    width: 100%; /* w-full */
+}
+
+.section-content-wrapper-large {
+    max-width: 64rem; /* max-w-4xl */
+    width: 100%; /* w-full */
+}
+
+/* Specific for About Me and Contact */
+@media (min-width: 1024px) { /* lg breakpoint */
+    .section-content-wrapper-default {
+        max-width: 56rem; /* lg:max-w-4xl */
+    }
+}
+
+/* Specific for Experience, Skills, Projects */
+@media (min-width: 1024px) { /* lg breakpoint */
+    .section-content-wrapper-large {
+        max-width: 72rem; /* lg:max-w-5xl */
+    }
+}
+
+
+/* Section Heading Style */
+.section-heading {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    color: #171717; /* text-neutral-900 */
+    margin-bottom: 2.5rem; /* mb-10 */
+    padding-bottom: 0.5rem; /* pb-2 */
+    display: inline-block;
+    border-bottom: 2px solid #a5b4fc; /* border-b-2 border-indigo-300 */
+}
+
+
+/* Card Style (for Experience, Skills, Projects) */
+.content-card {
+    background-color: #fafafa; /* bg-neutral-50 */
+    padding: 1.5rem; /* p-6 */
+    border-radius: 0.75rem; /* rounded-xl for project/experience, rounded-lg for skills */
+    border: 1px solid #e5e7eb; /* border-neutral-200 */
+    transition-property: border-color, box-shadow;
+    transition-duration: 200ms; /* transition duration-200 */
+    transition-timing-function: ease-in-out;
+}
+
+.content-card:hover {
+    border-color: #a5b4fc; /* hover:border-indigo-300 */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* subtle shadow on hover */
+}
+
+/* Style for scroll down arrows */
+.scroll-down-arrow {
+    margin-top: 2.5rem; /* mt-10 */
+    display: inline-block;
+    color: #a3a3a3; /* text-neutral-400 */
+    font-size: 1.875rem; /* text-3xl */
+    animation: bounce 1s infinite;
+}
+
+/* Hero Section Specific Overrides for two-column */
+.hero-section-grid {
+    grid-template-columns: 1fr; /* Default to single column */
+    gap: 2rem; /* gap-8 */
+}
+@media (min-width: 768px) { /* md breakpoint */
+    .hero-section-grid {
+        grid-template-columns: 1fr 1fr; /* md:grid-cols-2 */
+        gap: 4rem; /* md:gap-16 */
+    }
+}
