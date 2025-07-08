@@ -1,73 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tran Duc Manh | Portfolio</title>
+	<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
-  <header class="bg-white shadow-md">
-    <div class="max-w-4xl mx-auto px-4 py-6 flex items-center justify-between">
-      <h1 class="text-2xl font-bold">Your Name</h1>
-      <nav class="space-x-4 text-sm">
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#projects" class="hover:underline">Projects</a>
-        <a href="#contact" class="hover:underline">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="max-w-4xl mx-auto px-4 py-10">
-    <!-- Hero Section -->
-	<section class="flex flex-col items-center text-center mt-10">
-		<img src="/images/profile.JPG" alt="Tran Duc Manh" class="w-32 h-32 rounded-full shadow-md mb-4">
-		<h2 class="text-3xl font-semibold">Tran Duc Manh</h2>
-		<p class="text-lg text-gray-600">Computer Science Graduate</p>
-  	</section>
+<body class="scroll-smooth snap-y snap-mandatory overflow-y-scroll h-screen">
+	<!-- <header class="bg-white shadow-md">
+		<div class="max-w-4xl mx-auto px-4 py-6 flex items-center justify-between">
+			<h1 class="text-2xl font-bold">Tran Duc Manh</h1>
+			<nav class="space-x-4 text-sm">
+				<a href="#about" class="hover:underline">About</a>
+				<a href="#projects" class="hover:underline">Projects</a>
+				<a href="#contact" class="hover:underline">Contact</a>
+			</nav>
+		</div>
+	</header> -->
 
-    <!-- About Me Section -->
-	<section id="about" class="mt-12 text-center px-4">
-		<h3 class="text-2xl font-semibold mb-4">About Me</h3>
-		<p class="text-gray-700 max-w-2xl mx-auto leading-relaxed">
-	  	I'm currently living in <strong>Hanoi, Vietnam</strong>. I recently graduated with a degree in Computer Science and am actively seeking opportunities in the tech industry.  
-	  	<br><br>
-	  	My main areas of interest are <strong>backend development</strong>, <strong>software testing</strong>, and <strong>security</strong>. I enjoy working with systems that are robust, scalable, and secure — and I'm constantly learning how things work under the hood.
-	  	<br><br>
-	  	I'm looking for roles as a <strong>Test Engineer</strong>, <strong>Software Engineer</strong>, or <strong>Security Analyst</strong> where I can contribute meaningfully and grow as a professional.
-		</p>
-  	</section>
+	<main class="max-w-4xl mx-auto px-4 py-10">
+		<!-- Hero Section -->
+		<section class="snap-start min-h-screen flex flex-col items-center justify-center text-center px-4 bg-white">
+			<img src="/images/profile.JPG" alt="Tran Duc Manh" class="w-32 h-32 rounded-full shadow-md mb-4">
+			<h2 class="text-4xl font-semibold">Tran Duc Manh</h2>
+			<p class="text-lg text-gray-600">Computer Science Graduate</p>
+			<a href="#about" class="mt-10 text-blue-500 text-xl animate-bounce">↓</a>
+		</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="mt-12">
-      <h3 class="text-2xl font-semibold mb-4">Projects</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <!-- Project 1 -->
-        <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
-          <h4 class="text-lg font-bold">ExpressJS + RabbitMQ System</h4>
-          <p class="text-sm text-gray-600">A microservice architecture using Docker, RabbitMQ, and Express.js to coordinate task processing between services.</p>
-          <a href="https://github.com/yourusername/project1" class="text-blue-600 hover:underline text-sm">View on GitHub</a>
-        </div>
-        <!-- Project 2 -->
-        
-        <!-- Add more projects as needed -->
-      </div>
-    </section>
+		<!-- About Me Section -->
+		<section id="about"
+			class="snap-start min-h-screen flex items-center justify-center bg-gray-100 text-center px-4">
+			<div class="max-w-2xl">
+				<h3 class="text-3xl font-semibold mb-4">About Me</h3>
+				<p class="text-gray-700 leading-relaxed">
+					I'm currently living in <strong>Hanoi, Vietnam</strong>. I recently graduated with a degree in
+					Computer Science and am actively seeking opportunities in the tech industry.
+					<br><br>
+					My main areas of interest are <strong>backend development</strong>, <strong>software
+						testing</strong>, and <strong>security</strong>. I enjoy working with systems that are robust,
+					scalable, and secure — and I'm constantly learning how things work under the hood.
+					<br><br>
+					I'm looking for roles as a <strong>Test Engineer</strong>, <strong>Software Engineer</strong>, or
+					<strong>Security Analyst</strong> where I can contribute meaningfully and grow as a professional.
+				</p>
+				<a href="#projects" class="mt-10 inline-block text-blue-500 text-xl animate-bounce">↓</a>
+			</div>
+		</section>
 
-    <!-- Contact / Resume Section -->
-    <section id="contact" class="mt-12">
-      <h3 class="text-2xl font-semibold mb-4">Resume & Contact</h3>
-      <p class="mb-2">
-        📄 <a href="resume.pdf" class="text-blue-600 hover:underline">Download My Resume</a>
-      </p>
-      <p>Email: <a href="mailto:tran.ma@northeasern.edu" class="text-blue-600">tran.ma@northeasern.edu</a></p>
-      <p>GitHub: <a href="https://github.com/manhasv" class="text-blue-600">github.com/manhasv</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/manh-tran-170b34250" class="text-blue-600">linkedin.com/in/manh-tran-170b34250</a></p>
-    </section>
-  </main>
+		<!-- Projects Section -->
+		<section id="projects" class="snap-start min-h-screen flex items-center justify-center bg-white">
+			<h3 class="text-2xl font-semibold mb-4">Projects</h3>
+			<div class="grid md:grid-cols-2 gap-6">
+				<!-- Project 1 -->
+				<div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+					<h4 class="text-lg font-bold">ExpressJS + RabbitMQ System</h4>
+					<p class="text-sm text-gray-600">A microservice architecture using Docker, RabbitMQ, and Express.js
+						to coordinate task processing between services.</p>
+					<a href="https://github.com/yourusername/project1"
+						class="text-blue-600 hover:underline text-sm">View on GitHub</a>
+				</div>
+				<!-- Project 2 -->
 
-  <footer class="text-center text-sm text-gray-500 py-6">
-    &copy; 2025 Tran Duc Manh. All rights reserved.
-  </footer>
+				<!-- Add more projects as needed -->
+			</div>
+		</section>
+
+		<!-- Contact / Resume Section -->
+		<section id="contact" class="snap-start min-h-screen flex flex-col items-center justify-center bg-gray-100 text-center">
+			<h3 class="text-2xl font-semibold mb-4">Resume & Contact</h3>
+			<p class="mb-2">
+				📄 <a href="resume.pdf" class="text-blue-600 hover:underline">Download My Resume</a>
+			</p>
+			<p>Email: <a href="mailto:tran.ma@northeasern.edu" class="text-blue-600">tran.ma@northeasern.edu</a></p>
+			<p>GitHub: <a href="https://github.com/manhasv" class="text-blue-600">github.com/manhasv</a></p>
+			<p>LinkedIn: <a href="https://linkedin.com/in/manh-tran-170b34250"
+					class="text-blue-600">linkedin.com/in/manh-tran-170b34250</a></p>
+		</section>
+	</main>
+
+	<footer class="text-center text-sm text-gray-500 py-6">
+		&copy; 2025 Tran Duc Manh. All rights reserved.
+	</footer>
 </body>
+
 </html>
