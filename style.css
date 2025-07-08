@@ -89,12 +89,6 @@ body {
     padding-left: 1rem; /* px-4 */
     padding-right: 1rem; /* px-4 */
     text-align: center; /* text-center */
-    flex-direction: column; /* flex-col (default for most sections) */
-}
-
-/* Override flex-direction for specific sections if needed, e.g., Hero */
-.page-section.hero-section {
-    flex-direction: column; /* Ensure it remains column on mobile for the split layout */
 }
 
 
@@ -171,4 +165,40 @@ body {
         grid-template-columns: 1fr 1fr; /* md:grid-cols-2 */
         gap: 4rem; /* md:gap-16 */
     }
+}
+
+.nav-link {
+    color: #737373; /* text-neutral-600 */
+    transition-property: color;
+    transition-duration: 200ms; /* duration-200 */
+    transition-timing-function: ease-in-out;
+}
+
+.nav-link:hover {
+    color: #171717; /* hover:text-neutral-900 */
+}
+
+/* Contact Link Style */
+.contact-link {
+    color: #171717; 
+    text-decoration: none; 
+    font-weight: 500;
+    display: flex;
+    transition-property: color, text-decoration-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.contact-link:hover {
+    color: #171717;
+    text-decoration: underline;
+    text-decoration-color: #a5b4fc;
+}
+
+.contact-link svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem; 
+    fill: currentColor;
+    flex-shrink: 0;
 }
