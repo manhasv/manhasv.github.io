@@ -1,13 +1,13 @@
-/* General Body and Font Styles */
+
 body {
     font-family: 'Inter', sans-serif;
-    font-weight: 400; /* Set a default body font weight, e.g., 400 (Regular) */
-    font-style: normal; /* Ensure normal font style */
+    font-weight: 400; 
+    font-style: normal; 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Minimalist Scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -25,7 +25,6 @@ body {
     background: #94a3b8;
 }
 
-/* Animations (keeping them subtle) */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -75,110 +74,90 @@ body {
     }
 }
 
-/* Reusable Component Styles */
-
-/* Base style for all main content sections */
-.page-section {
-    scroll-snap-align: start; /* snap-start */
-    min-height: 100vh; /* min-h-screen */
-    display: flex; /* flex */
-    align-items: center; /* items-center */
-    justify-content: center; /* justify-center */
-    padding-top: 4rem; /* py-16 */
-    padding-bottom: 4rem; /* py-16 */
-    padding-left: 1rem; /* px-4 */
-    padding-right: 1rem; /* px-4 */
-    text-align: center; /* text-center */
-}
-
-
-/* Wrapper for content within sections (e.g., max-width, w-full) */
 .section-content-wrapper-default {
-    max-width: 48rem; /* max-w-3xl */
-    width: 100%; /* w-full */
+    max-width: 48rem;
+    width: 100%;
 }
 
 .section-content-wrapper-large {
-    max-width: 64rem; /* max-w-4xl */
-    width: 100%; /* w-full */
+    max-width: 64rem;
+    width: 100%;
 }
 
-/* Specific for About Me and Contact */
-@media (min-width: 1024px) { /* lg breakpoint */
+@media (min-width: 1024px) { 
     .section-content-wrapper-default {
-        max-width: 56rem; /* lg:max-w-4xl */
+        max-width: 56rem; 
     }
 }
 
-/* Specific for Experience, Skills, Projects */
-@media (min-width: 1024px) { /* lg breakpoint */
+
+@media (min-width: 1024px) {
     .section-content-wrapper-large {
-        max-width: 72rem; /* lg:max-w-5xl */
+        max-width: 72rem; 
     }
 }
 
 
-/* Section Heading Style */
+
 .section-heading {
-    font-size: 2.25rem; /* text-4xl */
-    font-weight: 700; /* font-bold */
-    color: #171717; /* text-neutral-900 */
-    margin-bottom: 2.5rem; /* mb-10 */
-    padding-bottom: 0.5rem; /* pb-2 */
+    font-size: 2.25rem; 
+    font-weight: 700; 
+    color: #171717; 
+    margin-bottom: 2.5rem;
+    padding-bottom: 0.5rem; 
     display: inline-block;
-    border-bottom: 2px solid #a5b4fc; /* border-b-2 border-indigo-300 */
+    border-bottom: 2px solid #a5b4fc; 
 }
 
 
-/* Card Style (for Experience, Skills, Projects) */
+
 .content-card {
-    background-color: #fafafa; /* bg-neutral-50 */
-    padding: 1.5rem; /* p-6 */
-    border-radius: 0.75rem; /* rounded-xl for project/experience, rounded-lg for skills */
-    border: 1px solid #e5e7eb; /* border-neutral-200 */
+    background-color: #fafafa; 
+    padding: 1.5rem; 
+    border-radius: 0.75rem; 
+    border: 1px solid #e5e7eb; 
     transition-property: border-color, box-shadow;
-    transition-duration: 200ms; /* transition duration-200 */
+    transition-duration: 200ms;
     transition-timing-function: ease-in-out;
 }
 
 .content-card:hover {
-    border-color: #a5b4fc; /* hover:border-indigo-300 */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* subtle shadow on hover */
+    border-color: #a5b4fc; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
 }
 
-/* Style for scroll down arrows */
+
 .scroll-down-arrow {
-    margin-top: 2.5rem; /* mt-10 */
+    margin-top: 2.5rem; 
     display: inline-block;
-    color: #a3a3a3; /* text-neutral-400 */
-    font-size: 1.875rem; /* text-3xl */
+    color: #a3a3a3; 
+    font-size: 1.875rem; 
     animation: bounce 1s infinite;
 }
 
-/* Hero Section Specific Overrides for two-column */
+
 .hero-section-grid {
-    grid-template-columns: 1fr; /* Default to single column */
-    gap: 2rem; /* gap-8 */
+    grid-template-columns: 1fr; 
+    gap: 2rem; 
 }
-@media (min-width: 768px) { /* md breakpoint */
+@media (min-width: 768px) { 
     .hero-section-grid {
-        grid-template-columns: 1fr 1fr; /* md:grid-cols-2 */
-        gap: 4rem; /* md:gap-16 */
+        grid-template-columns: 1fr 1fr; 
+        gap: 4rem; 
     }
 }
 
 .nav-link {
-    color: #737373; /* text-neutral-600 */
+    color: #737373;
     transition-property: color;
-    transition-duration: 200ms; /* duration-200 */
+    transition-duration: 200ms;
     transition-timing-function: ease-in-out;
 }
 
 .nav-link:hover {
-    color: #171717; /* hover:text-neutral-900 */
+    color: #171717;
 }
 
-/* Contact Link Style */
 .contact-link {
     color: #171717; 
     text-decoration: none; 
