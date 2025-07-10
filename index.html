@@ -25,7 +25,7 @@
 	</header>
 
 	<main class="max-w-6xl mx-auto px-8 py-10">
-		<section id="hero" class="snap-start min-h-screen flex flex-col items-center justify-center bg-white px-4 py-16">
+		<section id="hero" class="section bg-white">
 			<div class="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
 				<div class="flex justify-center md:justify-center">
 					<div
@@ -40,8 +40,8 @@
 						Tran Duc Manh
 					</h1>
 					<p class="text-lg md:text-xl text-neutral-700 mb-8 animate-fade-in-up">
-						A Computer Science graduate building secure, reliable, and scalable systems. Passionate about
-						backend engineering, software testing, and security.
+						A CS fresher with a passion for building reliable software and understanding systems from the inside out. 
+						My interests span test engineering, cybersecurity, and software development.
 					</p>
 
 					<div class="flex space-x-4 justify-center md:justify-start">
@@ -63,12 +63,12 @@
 									d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
 								</path>
 							</svg>
-							Get in Touch
+							Contacts
 						</a>
 					</div>
 				</div>
 			</div>
-			<a href="#about" class="absolute bottom-16 text-neutral-400 text-3xl animate-bounce">
+			<a href="#about" class="arrow animate-bounce">
 				<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 					xmlns="http://www.w3.org/2000/svg">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -78,28 +78,20 @@
 			</a>
 		</section>
 
-		<section id="about" class="snap-start min-h-screen flex flex-col items-center justify-center bg-neutral-50 px-4 py-16">
-			<div class="max-w-3xl lg:max-w-4xl">
-				<h2 class="text-4xl font-bold text-neutral-900 mb-6 pb-2 inline-block border-b-2 border-indigo-300">
-					About Me
-				</h2>
-				<p class="text-lg text-neutral-700 leading-relaxed mb-6">
-					I recently graduated with a <strong>Bachelor of Science in Computer Science</strong> from
-					<strong>Northeastern
-						University</strong> (Boston, MA) where I was part of the <strong>Honors Program</strong> and
-					maintained a <strong>3.8/4.0
-						GPA</strong>, earning a spot on the Dean’s List multiple times. My coursework included rigorous
-					studies in
-					<strong>Object-Oriented Design, Algorithms and Data, Computer Systems, Network
-						and Distributed Systems, Fundamentals of Software Engineering, and System Security</strong>.
+		<section id="about" class="section bg-neutral-50">
+			<div class="section-container">
+				<h2 class="section-heading"> About Me </h2>
+				<p>
+					I recently graduated from <strong>Northeastern University</strong> with a degree in <strong>Computer Science</strong> (Class of 2025). 
 				</p>
-				<p class="text-lg text-neutral-700 leading-relaxed mb-6">
+				<p>
 					My core interests lie in <strong>backend development</strong>, <strong>software testing</strong>,
-					and <strong>security</strong>. I'm driven
-					by a desire to build robust, scalable, and secure systems, and I'm always eager to understand the
-					underlying mechanisms of how technology works.
+					and <strong>security</strong>. What draws me to tech isn’t just building things—it’s understanding how and why they work, and what happens when they don’t. 
+					From debugging tricky bugs in Docker-based microservices to reverse-engineering security flaws, 
+					I’ve always been fascinated by the low-level details that make complex systems tick. I’m originally from Vietnam, 
+					and I’m excited to start my career where I can grow as a test engineer, software developer, or anywhere systems need clarity and resilience.
 				</p>
-				<p class="text-lg text-neutral-700 leading-relaxed">
+				<p>
 					I'm actively looking for roles such as a <strong>Test Engineer</strong>, <strong>Software
 						Engineer</strong>, or <strong>Security
 						Analyst</strong> where I can contribute meaningfully to innovative projects and continuously
@@ -108,7 +100,7 @@
 				</p>
 				
 			</div>
-			<a href="#experience" class="mt-10 inline-block text-neutral-400 text-3xl animate-bounce">
+			<a href="#experience" class="arrow animate-bounce">
 				<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 					xmlns="http://www.w3.org/2000/svg">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -118,61 +110,44 @@
 			</a>
 		</section>
 
-		<section id="experience" class="snap-start min-h-screen flex flex-col items-center justify-center bg-white px-4 py-16">
-			<div class="max-w-4xl lg:max-w-5xl w-full">
-				<h2 class="text-4xl font-bold text-neutral-900 mb-10 pb-2 inline-block border-b-2 border-indigo-300">
-					Work
-					Experience</h2>
-
-				<div
-					class="mb-8 p-6 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-indigo-300 transition duration-200">
+		<section id="experience" class="section bg-white">
+			<div class="section-container">
+				<h2 class="section-heading"> Work Experiences</h2>
+				<div class="mb-8 p-6 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-indigo-300 transition duration-200">
 					<div class="flex justify-between items-center mb-2">
 						<h3 class="text-2xl font-semibold">Software Engineer Intern</h3>
 						<span class="text-neutral-600 text-lg">June 2024 - September 2024</span>
 					</div>
 					<p class="text-lg font-medium text-neutral-800 mb-3">HIDECC, Hanoi, Vietnam</p>
 					<ul class="list-disc list-inside text-neutral-700 space-y-2 text-base">
-						<li>Migrated key Hospital Information System components to <strong>microservices</strong> by
-							developing
-							appointment and patient record services, improving communication efficiency by
-							<strong>30%</strong>.
-						</li>
-						<li>Redesigned system to utilize <strong>Docker containers</strong> and a <strong>RabbitMQ
-								message broker</strong> to
-							distribute background tasks, improving deployment flexibility and scalability by
-							<strong>20%</strong>.
-						</li>
+						<p> I worked as a Software Engineer Intern at HIDECC during summer 2024 under the guidance of <a href="https://www.facebook.com/tunghs">Ho Tung</a>, 
+							where I was responsible for developing and maintaining backend services for a microservices-based system.</p>
+						<p>It was during this time that I learned a lot about <strong>scalable systems</strong>, <strong>microservices</strong>, 
+							<strong>Docker</strong> and <strong>RabbitMQ</strong> message broker.</p>
 					</ul>
 				</div>
 
-				<div
-					class="p-6 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-indigo-300 transition duration-200">
+				<div class="p-6 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-indigo-300 transition duration-200">
 					<div class="flex justify-between items-center mb-2">
 						<h3 class="text-2xl font-semibold">Quality Assurance Automation Co-op</h3>
 						<span class="text-neutral-600 text-lg">January 2023 – June 2023</span>
 					</div>
 					<p class="text-lg font-medium text-neutral-800 mb-3">MFS Investment Management, Boston, MA</p>
 					<ul class="list-disc list-inside text-neutral-700 space-y-2 text-base">
-						<li>Delivered <strong>3 full-scale projects in 6 months</strong>, exceeding
-							the typical project load for an intern cycle.</li>
-						<li>Automated end-to-end UI/UX testing for 3 flagship applications by developing <strong>62 Test
-								Complete scripts</strong>,
-							reducing manual testing by <strong>25%</strong> and increasing test coverage to
-							<strong>98%</strong>.
-						</li>
-						<li>Supervised and documented API with <strong>Postman</strong> and automated <strong>Jenkins
-								jobs</strong>, running 15
-							test suites weekly, enhancing robustness by <strong>15%</strong>.
-						</li>
-						<li>Supported Agile project delivery by participating in weekly Kanban sprints, helping to close
-							<strong>54 tickets</strong> through validation of new working test
-							suites for internal financial applications.
-						</li>
+						<p>
+							This was my first full-time experience as well as my first corporate experience ever in the US. I was working
+							under the mentor of <a href="https://www.linkedin.com/in/david-cronin-ab5296/">David Cronin</a>, a Principal QA Architect and my manager.
+						</p>
+						<p>
+							My responsibilities were mainly developing and maintaining automated test scripts  using <strong>Selenium</strong> and <strong>TestComplete</strong>. 
+							I was first exposed to <strong>Agile</strong> methodologies, <strong>daily Kanban meetings</strong>, and the importance of <strong> CI/CD pipelines </strong> in software development.
+							Throughout the time in MFS, I had the chance to work and  fully automate test suites of <strong>MFS's 3 flagship applications</strong> on Jenkins.
+						</p>
 					</ul>
 				</div>
 				
 			</div>
-			<a href="#skills" class="mt-10 inline-block text-neutral-400 text-3xl animate-bounce">
+			<a href="#skills" class="arrow animate-bounce">
 				<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 					xmlns="http://www.w3.org/2000/svg">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -182,24 +157,17 @@
 			</a>
 		</section>
 
-		<section id="projects" class="snap-start min-h-screen flex flex-col items-center justify-center bg-neutral-50 px-4 py-16">
-			<div class="max-w-4xl lg:max-w-5xl w-full">
-				<h2 class="text-4xl font-bold text-neutral-900 mb-10 pb-2 inline-block border-b-2 border-indigo-300">My
-					Projects
-				</h2>
+		<section id="projects" class="section bg-neutral-50">
+			<div class="section-container">
+				<h2 class="section-heading">My Projects </h2>
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					<div
 						class="bg-neutral-50 p-6 rounded-xl border border-neutral-200 hover:border-indigo-300 transition duration-200 flex flex-col">
 						<h4 class="text-xl font-bold text-neutral-900 mb-2">Distributed Key-Value Database</h4>
 						<p class="text-sm text-neutral-600 mb-3">March 2024 – May 2024</p>
 						<p class="text-base text-neutral-700 mb-4 flex-grow">
-							Implemented a distributed, strongly consistent key-value store using the <strong>Raft
-								consensus
-								protocol</strong>, ensuring safe replication and leader election across multiple nodes.
-							Designed a
-							Raft-based log replication for data consistency and developed robust leader election and
-							heartbeat mechanisms. Passed <strong>20+ test configurations</strong>
-							for correctness and performance benchmarks.
+							In this project, I implemented a (relatively) simple, distributed, replicated <strong>key-value datastore</strong> that supports two API calls from clients: put(key, value) and get(key).
+							The catch is that this KVStore is implemented with strong consistency, based on simplified <a href="https://raft.github.io/raft.pdf">Raft consensus protocol</a>.
 						</p>
 						<div class="flex justify-start items-center mt-auto">
 							<a href="https://github.com/manhasv/KVStore" target="_blank"
@@ -220,14 +188,10 @@
 						<h4 class="text-xl font-bold text-neutral-900 mb-2">Grocery Store Feature (Covey Town)</h4>
 						<p class="text-sm text-neutral-600 mb-3">February - April 2024</p>
 						<p class="text-base text-neutral-700 mb-4 flex-grow">
-							Led a <strong>3-person team</strong> to design and integrate a new <strong>Grocery Store
-								feature</strong> into Covey
-							Town, a NodeJS-based social platform. Employed <strong>TypeScript</strong> on the backend,
-							leveraged
-							<strong>Supabase</strong> for user data, and architected automated testing with
-							<strong>Jest</strong> to achieve <strong>
-								95% test coverage</strong>. Integrated with GitHub CI/CD and
-							designed front-end components using <strong>React</strong> and <strong>Phaser APIs</strong>.
+							This was my final project for <a href="https://neu-se.github.io/CS4530-Spring-2024/">CS4530</a>. 
+							My team were handed a web application called CoveyTown and the team has 1 month to add a full-fledged new feature to it using existing tech-stack: <strong>Node.js TypeScript and React</strong>.
+							The project was challenging but rewarding, as we had to work with existing codebase and design a new feature that is both functional and user-friendly. 
+							The team successfully hosted the web app but unfortunately one member who was responsible for the database didnot maintain it so the website is unavailable now.
 						</p>
 						<div class="flex justify-start items-center mt-auto">
 							<a href="https://github.com/neu-cs4530/spring24-project-team-509" target="_blank" rel="noopener noreferrer"
@@ -247,13 +211,10 @@
 						<h4 class="text-xl font-bold text-neutral-900 mb-2">Rise From The Ashes (Game)</h4>
 						<p class="text-sm text-neutral-600 mb-3">April – June 2024</p>
 						<p class="text-base text-neutral-700 mb-4 flex-grow">
-							Developed an adventure-based game using <strong>Unity</strong> and <strong>C#</strong>,
-							which has garnered more than
-							<strong>200 playthroughs</strong>. Implemented core gameplay mechanics
-							and interactive experiences, and designed animation sequences with Unity, complemented by 3D
-							models created in <strong>Blender</strong>, significantly enhancing player immersion.
+							Making games was always my dream so I'm glad I had this chance to try and make a game. This was a team project where we had to make a game using Unity and C#. The time taken
+							was around 1 month. It is an adventure-based game where player has to explore and collect power-ups to defeat the boss. 
 						</p>
-						<div class="flex justify-start items-center mt-auto space-x-4">
+						<div class="flex justify-start items-center mt-auto">
 							<a href="https://github.com/manhasv/RiseFromTheAshes" target="_blank"
 								rel="noopener noreferrer"
 								class=" hover:underline flex items-center text-sm font-medium">
@@ -270,7 +231,7 @@
 				</div>
 				
 			</div>
-			<a href="#contact" class="mt-10 inline-block text-neutral-400 text-3xl animate-bounce">
+			<a href="#contact" class="arrow animate-bounce">
 				<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
 					xmlns="http://www.w3.org/2000/svg">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -280,10 +241,9 @@
 			</a>
 		</section>
 
-		<section id="skills" class="snap-start min-h-screen flex flex-col items-center justify-center bg-white px-4 py-16">
-			<div class="max-w-4xl lg:max-w-5xl w-full">
-				<h2 class="text-4xl font-bold text-neutral-900 mb-10 pb-2 inline-block border-b-2 border-indigo-300">My
-					Skills
+		<section id="skills" class="section bg-white">
+			<div class="section-container">
+				<h2 class="section-heading">My Skills
 				</h2>
 				<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
 					<div
@@ -350,8 +310,8 @@
 			</a>
 		</section>
 
-		<section id="contact" class="snap-start min-h-screen flex flex-col items-center justify-center px-4 py-16 bg-neutral-50">
-            <div class="section-content-wrapper-default">
+		<section id="contact" class="section bg-neutral-50">
+            <div class="section-container">
                 <h2 class="section-heading">Get in Touch</h2>
                 <p class="text-lg text-neutral-700 mb-6 max-w-xl">
                     I'm always open to discussing new opportunities, collaborations, or simply connecting. Feel free to reach
