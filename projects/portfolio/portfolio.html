@@ -12,15 +12,36 @@
 
 <body class="scroll-smooth bg-neutral-50 text-neutral-800">
     <header class="fixed top-0 left-0 right-0 bg-white bg-opacity-95 backdrop-blur-sm z-50 border-b border-neutral-100">
-        <div class="max-w-6xl mx-auto px-8 py-4 flex items-center justify-between">
-            <h1 class="text-2xl font-semibold text-neutral-900"><a href="../../index.html" class="nav-link">Tran Duc Manh</a></h1>
-            <nav class="space-x-6 text-base text-neutral-600">
-                <a href="../../index.html" class="nav-link">Home</a>
-                <a href="../../projects.html" class="nav-link">Projects Stories</a>
-                <a href="../../hobbies.html" class="nav-link">Hobbies Blog</a>
-            </nav>
-        </div>
-    </header>
+		<div class="max-w-6xl mx-auto px-8 py-4 flex items-center justify-between">
+			<h1 class="text-2xl font-semibold text-neutral-900"><a href="../index.html" class="nav-link"> Tran Duc Manh</a>
+			</h1>
+			<nav class="space-x-6 text-base text-neutral-600">
+				<div class="relative inline-block group">
+					<a href="../../index.html" class="nav-link">Home <span class="ml-1">&#9660;</span></a>
+					<div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md w-48 py-2 z-10"
+						style="top: 100%;">
+						<a href="../../index.html#about" class="block px-4 py-2 text-neutral-700 hover:bg-neutral-100">About</a>
+						<a href="../../index.html#experience" class="block px-4 py-2 text-neutral-700 hover:bg-neutral-100">Experience</a>
+						<a href="../../index.html#projects" class="block px-4 py-2 text-neutral-700 hover:bg-neutral-100">Projects</a>
+						<a href="../../index.html#skills" class="block px-4 py-2 text-neutral-700 hover:bg-neutral-100">Skills</a>
+						<a href="../../index.html#contact" class="block px-4 py-2 text-neutral-700 hover:bg-neutral-100">Contact</a>
+					</div>
+				</div>
+
+				<div class="relative inline-block group">
+					<a href="#" class="nav-link">Blogs <span class="ml-1">&#9660;</span></a>
+					<div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md w-48 py-2 z-10"
+						style="top: 100%;"> 
+						<a href="../about.html" class="block px-4 py-2 text-neutral-700 hover:bg-neutral-100">More about me</a>
+						<a href="../../projects.html" class="block px-4 py-2 text-neutral-700 hover:bg-neutral-100">Projects Stories</a>
+						<a href="../../hobbies.html" class="block px-4 py-2 text-neutral-700 hover:bg-neutral-100">Hobbies
+							Blog</a>
+						
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>   
 
     <main class="max-w-6xl mx-auto px-8 py-10 pt-28">
         <article class="blog-post content-card p-6 md:p-10 fade-in">
