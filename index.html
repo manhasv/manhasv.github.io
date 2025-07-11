@@ -7,19 +7,27 @@
 	<title>Tran Duc Manh | Portfolio</title>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="scroll-smooth snap-y snap-mandatory overflow-y-scroll h-screen bg-neutral-50 text-neutral-800">
 	<header class="fixed top-0 left-0 right-0 bg-white bg-opacity-95 backdrop-blur-sm z-50 border-b border-neutral-100">
 		<div class="max-w-6xl mx-auto px-8 py-4 flex items-center justify-between">
-			<h1 class="text-2xl font-semibold text-neutral-900">Tran Duc Manh</h1>
+			<h1 class="text-2xl font-semibold text-neutral-900"><a href="index.html" class="nav-link"> Tran Duc Manh</a></h1>
 			<nav class="space-x-6 text-base text-neutral-600">
+				<a href="index.html#hero" class="nav-link">Home</a>
 				<a href="#about" class="nav-link">About</a>
 				<a href="#experience" class="nav-link">Experience</a>
 				<a href="#projects" class="nav-link">Projects</a>
 				<a href="#skills" class="nav-link">Skills</a>
 				<a href="#contact" class="nav-link">Contact</a>
+
+				<div class="relative inline-block group">
+					<a href="#" class="nav-link">Blogs <span class="ml-1">&#9660;</span></a> <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md w-48 py-2 z-10"
+                         style="top: 100%;"> <a href="projects.html" class="block px-4 py-2 text-neutral-700 hover:bg-neutral-100">Projects Diary</a>
+						<a href="hobbies.html" class="block px-4 py-2 text-neutral-700 hover:bg-neutral-100">Hobbies Blog</a>
+					</div>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -40,7 +48,8 @@
 						Tran Duc Manh
 					</h1>
 					<p class="text-lg md:text-xl text-neutral-700 mb-8 animate-fade-in-up">
-						A CS fresher with a passion for building reliable software and understanding systems from the inside out. 
+						A CS fresher with a passion for building reliable software and understanding systems from the
+						inside out.
 						My interests span test engineering, cybersecurity, and software development.
 					</p>
 
@@ -82,13 +91,15 @@
 			<div class="section-container">
 				<h2 class="section-heading"> About Me </h2>
 				<p class="mb-4">
-					I recently graduated from <strong>Northeastern University</strong> with a degree in <strong>Computer Science</strong> (Class of 2025). 
+					I recently graduated from <strong>Northeastern University</strong> with a degree in <strong>Computer
+						Science</strong> (Class of 2025).
 				</p>
 				<p class="mb-4">
 					My core interests lie in <strong>backend development</strong>, <strong>software testing</strong>,
-					and <strong>security</strong>. What draws me to tech isn’t just building things—it’s understanding how and why they work, and what happens when they don’t. 
-					From debugging tricky bugs in Docker-based microservices to reverse-engineering security flaws, 
-					I’ve always been fascinated by the low-level details that make complex systems tick. 
+					and <strong>security</strong>. What draws me to tech isn’t just building things—it’s understanding
+					how and why they work, and what happens when they don’t.
+					From debugging tricky bugs in Docker-based microservices to reverse-engineering security flaws,
+					I’ve always been fascinated by the low-level details that make complex systems tick.
 				</p>
 				<p class="mb-4">
 					I'm actively looking for roles such as a <strong>Test Engineer</strong>, <strong>Software
@@ -97,7 +108,7 @@
 					enhance my
 					professional capabilities. I'm currently based in <strong>Hanoi, Vietnam</strong>.
 				</p>
-				
+
 			</div>
 			<a href="#experience" class="arrow animate-bounce">
 				<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -112,21 +123,27 @@
 		<section id="experience" class="section bg-white">
 			<div class="section-container">
 				<h2 class="section-heading"> Work Experiences</h2>
-				<div class="mb-8 p-6 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-indigo-300 transition duration-200">
+				<div
+					class="mb-8 p-6 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-indigo-300 transition duration-200">
 					<div class="flex justify-between items-center mb-2">
 						<h3 class="text-2xl font-semibold">Software Engineer Intern</h3>
 						<span class="text-neutral-600 text-lg">June 2024 - September 2024</span>
 					</div>
 					<p class="text-lg font-medium text-neutral-800 mb-3">HIDECC, Hanoi, Vietnam</p>
 					<ul class="list-disc list-inside text-neutral-700 space-y-2 text-base">
-						<p> I worked as a Software Engineer Intern at HIDECC during summer 2024 under the guidance of <a href="https://www.facebook.com/tunghs">Ho Tung</a>, 
-							where I was responsible for developing and maintaining backend services for a microservices-based system.</p>
-						<p>It was during this time that I learned a lot about <strong>scalable systems</strong>, <strong>microservices</strong>, 
-							<strong>Docker</strong> and <strong>RabbitMQ</strong> message broker.</p>
+						<p> I worked as a Software Engineer Intern at HIDECC during summer 2024 under the guidance of <a
+								href="https://www.facebook.com/tunghs">Ho Tung</a>,
+							where I was responsible for developing and maintaining backend services for a
+							microservices-based system.</p>
+						<p>It was during this time that I learned a lot about <strong>scalable systems</strong>,
+							<strong>microservices</strong>,
+							<strong>Docker</strong> and <strong>RabbitMQ</strong> message broker.
+						</p>
 					</ul>
 				</div>
 
-				<div class="p-6 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-indigo-300 transition duration-200">
+				<div
+					class="p-6 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-indigo-300 transition duration-200">
 					<div class="flex justify-between items-center mb-2">
 						<h3 class="text-2xl font-semibold">Quality Assurance Automation Co-op</h3>
 						<span class="text-neutral-600 text-lg">January 2023 – June 2023</span>
@@ -134,17 +151,23 @@
 					<p class="text-lg font-medium text-neutral-800 mb-3">MFS Investment Management, Boston, MA</p>
 					<ul class="list-disc list-inside text-neutral-700 space-y-2 text-base">
 						<p>
-							This was my first full-time experience as well as my first corporate experience ever in the US. I was working
-							under the mentor of <a href="https://www.linkedin.com/in/david-cronin-ab5296/">David Cronin</a>, a Principal QA Architect and my manager.
+							This was my first full-time experience as well as my first corporate experience ever in the
+							US. I was working
+							under the mentor of <a href="https://www.linkedin.com/in/david-cronin-ab5296/">David
+								Cronin</a>, a Principal QA Architect and my manager.
 						</p>
 						<p>
-							My responsibilities were mainly developing and maintaining automated test scripts  using <strong>Selenium</strong> and <strong>TestComplete</strong>. 
-							I was first exposed to <strong>Agile</strong> methodologies, <strong>daily Kanban meetings</strong>, and the importance of <strong> CI/CD pipelines </strong> in software development.
-							Throughout the time in MFS, I had the chance to work and  fully automate test suites of <strong>MFS's 3 flagship applications</strong> on Jenkins.
+							My responsibilities were mainly developing and maintaining automated test scripts using
+							<strong>Selenium</strong> and <strong>TestComplete</strong>.
+							I was first exposed to <strong>Agile</strong> methodologies, <strong>daily Kanban
+								meetings</strong>, and the importance of <strong> CI/CD pipelines </strong> in software
+							development.
+							Throughout the time in MFS, I had the chance to work and fully automate test suites of
+							<strong>MFS's 3 flagship applications</strong> on Jenkins.
 						</p>
 					</ul>
 				</div>
-				
+
 			</div>
 			<a href="#projects" class="arrow animate-bounce">
 				<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -160,73 +183,85 @@
 			<div class="section-container">
 				<h2 class="section-heading">My Projects </h2>
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					<div class="bg-neutral-50 p-6 rounded-xl border border-neutral-200 hover:border-indigo-300 transition duration-200 flex flex-col">
-						<h4 class="text-xl font-bold text-neutral-900 mb-2">Distributed Key-Value Database</h4>
-						<p class="text-sm text-neutral-600 mb-3">March 2024 – May 2024</p>
-						<p class="text-base text-neutral-700 mb-4 flex-grow">
-							In this project, I implemented a (relatively) simple, distributed, replicated <strong>key-value datastore</strong> that supports two API calls from clients: put(key, value) and get(key).
-							The catch is that this KVStore is implemented with strong consistency, based on simplified <a href="https://raft.github.io/raft.pdf">Raft consensus protocol</a>.
-						</p>
-						<div class="flex justify-start items-center mt-auto">
-							<a href="https://github.com/manhasv/KVStore" target="_blank"
-								rel="noopener noreferrer"
-								class=" hover:underline flex items-center text-sm font-medium">
-								<svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"
-									xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd"
-										d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.475.087.687-.206.687-.458 0-.225-.007-.975-.011-1.912-2.766.587-3.359-1.336-3.359-1.336-.452-1.152-1.107-1.458-1.107-1.458-.908-.62.069-.608.069-.608 1.004.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.336-2.22-.253-4.555-1.115-4.555-4.935 0-1.09.39-1.986 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.701.113 2.516.331 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.099 2.65.64.702 1.029 1.598 1.029 2.688 0 3.828-2.339 4.681-4.566 4.925.359.309.678.92.678 1.855 0 1.336-.012 2.419-.012 2.747 0 .252.21.547.695.457C21.133 20.2 24 16.435 24 12.017 24 6.484 19.522 2 14 2h-2z"
-										clip-rule="evenodd"></path>
-								</svg>
-								GitHub
-							</a>
-						</div>
-					</div>
-					<div class="bg-neutral-50 p-6 rounded-xl border border-neutral-200 hover:border-indigo-300 transition duration-200 flex flex-col">
-						<h4 class="text-xl font-bold text-neutral-900 mb-2">Grocery Store Feature (Covey Town)</h4>
-						<p class="text-sm text-neutral-600 mb-3">February - April 2024</p>
-						<p class="text-base text-neutral-700 mb-4 flex-grow">
-							This was my final project for <a href="https://neu-se.github.io/CS4530-Spring-2024/">CS4530</a>. 
-							My team were handed a web application called CoveyTown and the team has 1 month to add a full-fledged new feature to it using existing tech-stack: <strong>Node.js TypeScript and React</strong>.
-							The project was challenging but rewarding, as we had to work with existing codebase and design a new feature that is both functional and user-friendly. 
-							The team successfully hosted the web app but unfortunately one member who was responsible for the database didnot maintain it so the website is unavailable now.
-						</p>
-						<div class="flex justify-start items-center mt-auto">
-							<a href="https://github.com/neu-cs4530/spring24-project-team-509" target="_blank" rel="noopener noreferrer"
-								class=" hover:underline flex items-center text-sm font-medium">
-								<svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"
-									xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd"
-										d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.475.087.687-.206.687-.458 0-.225-.007-.975-.011-1.912-2.766.587-3.359-1.336-3.359-1.336-.452-1.152-1.107-1.458-1.107-1.458-.908-.62.069-.608.069-.608 1.004.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.336-2.22-.253-4.555-1.115-4.555-4.935 0-1.09.39-1.986 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.701.113 2.516.331 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.099 2.65.64.702 1.029 1.598 1.029 2.688 0 3.828-2.339 4.681-4.566 4.925.359.309.678.92.678 1.855 0 1.336-.012 2.419-.012 2.747 0 .252.21.547.695.457C21.133 20.2 24 16.435 24 12.017 24 6.484 19.522 2 14 2h-2z"
-										clip-rule="evenodd"></path>
-								</svg>
-								GitHub
-							</a>
-						</div>
-					</div>
-					<div
-						class="bg-neutral-50 p-6 rounded-xl border border-neutral-200 hover:border-indigo-300 transition duration-200 flex flex-col">
-						<h4 class="text-xl font-bold text-neutral-900 mb-2">Rise From The Ashes (Game)</h4>
-						<p class="text-sm text-neutral-600 mb-3">April – June 2024</p>
-						<p class="text-base text-neutral-700 mb-4 flex-grow">
-							Making games was always my dream so I'm glad I had this chance to try and make a game. This was a team project where we had to make a game using Unity and C#. The time taken
-							was around 1 month. It is an adventure-based game where player has to explore and collect power-ups to defeat the boss. 
-						</p>
-						<div class="flex justify-start items-center mt-auto">
-							<a href="https://github.com/manhasv/RiseFromTheAshes" target="_blank"
-								rel="noopener noreferrer"
-								class=" hover:underline flex items-center text-sm font-medium">
-								<svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24"
-									xmlns="http://www.w3.org/2000/svg">
-									<path fill-rule="evenodd"
-										d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.475.087.687-.206.687-.458 0-.225-.007-.975-.011-1.912-2.766.587-3.359-1.336-3.359-1.336-.452-1.152-1.107-1.458-1.107-1.458-.908-.62.069-.608.069-.608 1.004.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.336-2.22-.253-4.555-1.115-4.555-4.935 0-1.09.39-1.986 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.701.113 2.516.331 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.099 2.65.64.702 1.029 1.598 1.029 2.688 0 3.828-2.339 4.681-4.566 4.925.359.309.678.92.678 1.855 0 1.336-.012 2.419-.012 2.747 0 .252.21.547.695.457C21.133 20.2 24 16.435 24 12.017 24 6.484 19.522 2 14 2h-2z"
-										clip-rule="evenodd"></path>
-								</svg>
-								GitHub
-							</a>
-						</div>
-					</div>
-				</div>
-				
+                    <div class="content-card flex flex-col animate-fade-in-up cursor-pointer"
+                         onclick="location.href='projects/temp.html';"
+                         style="animation-delay: 0.0s;">
+                        <img src="images/project thumbs/kvstore.png" alt="Distributed Key-Value Database Thumbnail"
+                             class="w-full h-48 object-cover rounded-t-lg mb-4 border-b border-neutral-200">
+                        <div class="p-4 flex-grow flex flex-col">
+                            <h4 class="text-xl font-bold text-neutral-900 mb-2">Distributed Key-Value Database</h4>
+                            <p class="text-sm text-neutral-600 mb-3">Started: March 2024</p>
+                            <p class="p mb-4 flex-grow">
+                                This project involved implementing a distributed, replicated key-value datastore with strong consistency,
+                                based on a simplified Raft consensus protocol. It was a deep dive into distributed systems.
+                            </p>
+                            <div class="flex justify-between items-center mt-auto">
+                                <!-- Removed "Read My Diary" button -->
+                                <a href="https://github.com/manhasv/KVStore" target="_blank" rel="noopener noreferrer"
+                                    class="hover:underline flex items-center text-sm font-medium text-neutral-700"
+                                    onclick="event.stopPropagation();"> <!-- IMPORTANT: Added onclick to stop propagation -->
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.043-3.356.726-4.042-1.61-4.042-1.61-.542-1.309-1.328-1.652-1.328-1.652-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.804 1.305 3.49.998.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.192.693.801.576C20.562 22.179 24 17.61 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd"/>
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card flex flex-col animate-fade-in-up cursor-pointer"
+                         onclick="location.href='projects/temp.html';"
+                         style="animation-delay: 0.2s;">
+                        <img src="images/project thumbs/grocery.png" alt="Covey Town Grocery Feature Thumbnail"
+                             class="w-full h-48 object-cover rounded-t-lg mb-4 border-b border-neutral-200">
+                        <div class="p-4 flex-grow flex flex-col">
+                            <h4 class="text-xl font-bold text-neutral-900 mb-2">Grocery Store Feature (Covey Town)</h4>
+                            <p class="text-sm text-neutral-600 mb-3">Started: February 2024</p>
+                            <p class="p mb-4 flex-grow">
+                                This was a challenging team project for CS4530, where we added a full-fledged new feature
+                                (a grocery store) to an existing web application using Node.js TypeScript and React.
+                            </p>
+                            <div class="flex justify-between items-center mt-auto">
+                                <!-- Removed "Read My Diary" button -->
+                                <a href="https://github.com/neu-cs4530/spring24-project-team-509" target="_blank" rel="noopener noreferrer"
+                                    class="hover:underline flex items-center text-sm font-medium text-neutral-700"
+                                    onclick="event.stopPropagation();"> <!-- IMPORTANT: Added onclick to stop propagation -->
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.043-3.356.726-4.042-1.61-4.042-1.61-.542-1.309-1.328-1.652-1.328-1.652-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.804 1.305 3.49.998.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.192.693.801.576C20.562 22.179 24 17.61 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd"/>
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card flex flex-col animate-fade-in-up cursor-pointer"
+                         onclick="location.href='projects/temp.html';"
+                         style="animation-delay: 0.4s;">
+                        <img src="images/project thumbs/rfta.png" alt="Rise From The Ashes Game Thumbnail"
+                             class="w-full h-48 object-cover rounded-t-lg mb-4 border-b border-neutral-200">
+                        <div class="p-4 flex-grow flex flex-col">
+                            <h4 class="text-xl font-bold text-neutral-900 mb-2">Rise From The Ashes (Game)</h4>
+                            <p class="text-sm text-neutral-600 mb-3">Started: April 2024</p>
+                            <p class="p mb-4 flex-grow">
+                                My first attempt at game development! This was a team project to create an adventure-based
+                                game using Unity and C#, focusing on exploration and boss battles.
+                            </p>
+                            <div class="flex justify-between items-center mt-auto">
+                                <!-- Removed "Read My Diary" button -->
+                                <a href="https://github.com/manhasv/RiseFromTheAshes" target="_blank" rel="noopener noreferrer"
+                                    class="hover:underline flex items-center text-sm font-medium text-neutral-700"
+                                    onclick="event.stopPropagation();"> <!-- IMPORTANT: Added onclick to stop propagation -->
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.043-3.356.726-4.042-1.61-4.042-1.61-.542-1.309-1.328-1.652-1.328-1.652-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.804 1.305 3.49.998.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.192.693.801.576C20.562 22.179 24 17.61 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd"/>
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 			</div>
 			<a href="#skills" class="arrow animate-bounce">
 				<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -308,49 +343,63 @@
 		</section>
 
 		<section id="contact" class="section bg-neutral-50">
-            <div class="section-container">
-                <h2 class="section-heading">Contacts and Info</h2>
-                <p class="text-lg text-neutral-700 mb-6 max-w-xl">
-                    I'm always open to discussing new opportunities, collaborations, or simply connecting. Feel free to reach
-                    out!
-                </p>
-                <div class="space-y-4 text-lg">
-                    <p>
-                        <a href="Resume-Manh_Tran.pdf" download class="contact-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path fill-rule="evenodd" d="M19.5 9.75A3 3 0 0 0 16.5 6H3.75a3 3 0 0 0-3 3v8.25a3 3 0 0 0 3 3h12.75a3 3 0 0 0 3-3V9.75ZM7.5 13.5a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5h-6Z" clip-rule="evenodd" />
-                            </svg>
-                            Download My Resume
-                        </a>
-                    </p>
-                    <p>
-                        <a href="mailto:tran.ma@northeastern.edu" class="contact-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M1.5 8.67v8.583A2.25 2.25 0 0 0 3.75 19.5h16.5a2.25 2.25 0 0 0 2.25-2.25V8.67m-18 0A2.25 2.25 0 0 1 3.75 6.42h16.5a2.25 2.25 0 0 1 2.25 2.25m-18 0V6.75a2.25 2.25 0 0 1 2.25-2.25h16.5a2.25 2.25 0 0 1 2.25 2.25v1.92m-18 0V5.25a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 3.75 19.5h16.5a2.25 2.25 0 0 0 2.25-2.25V5.25a2.25 2.25 0 0 0-2.25-2.25H3.75A2.25 2.25 0 0 0 1.5 5.25v3.42ZM22.5 6.75h-21" />
-                            </svg>
-                            tran.ma@northeastern.edu
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://github.com/manhasv" target="_blank" rel="noopener noreferrer" class="contact-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path fill-rule="evenodd" d="M12 2.026a9.981 9.981 0 0 0-3.35 19.467c.5.092.683-.217.683-.483 0-.237-.009-.86-.014-1.69-2.782.603-3.37-1.34-3.37-1.34-.454-1.151-1.11-1.458-1.11-1.458-.908-.62.069-.608.069-.608 1.004.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.336-2.22-.253-4.555-1.115-4.555-4.935 0-1.09.39-1.986 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.701.113 2.516.331 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.099 2.65.64.702 1.029 1.598 1.029 2.688 0 3.828-2.339 4.681-4.566 4.925.359.309.678.92.678 1.855 0 1.336-.012 2.419-.012 2.747 0 .252.21.547.695.457A9.981 9.981 0 0 0 12 2.026Z" clip-rule="evenodd" />
-                            </svg>
-                            github.com/manhasv
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://linkedin.com/in/manh-tran-170b34250" target="_blank" rel="noopener noreferrer" class="contact-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                <path fill-rule="evenodd" d="M0 1.146C0 .513.526 0 1.176 0h21.648c.65 0 1.176.513 1.176 1.146v21.708c0 .633-.526 1.146-1.176 1.146H1.176C.526 24 0 23.487 0 22.854V1.146ZM6.223 20.35V9.77h-3.9V20.35h3.9ZM4.273 8.16C2.924 8.16 2 7.158 2 5.92c0-1.24.924-2.242 2.273-2.242 1.35 0 2.274 1.002 2.274 2.242 0 1.238-.924 2.24-2.274 2.24Zm15.933 12.19h-3.896v-5.07c0-1.21-.433-2.036-1.51-2.036-1.087 0-1.733.729-2.028 1.432-.104.25-.13.593-.13.937v4.737h-3.896s.05-10.45 0-11.45h3.896v1.657c.18-.807 1.47-1.954 3.326-1.954 2.42 0 4.225 1.58 4.225 4.984v6.757Z" clip-rule="evenodd" />
-                            </svg>
-                            linkedin.com/in/manh-tran-170b34250
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </section>
+			<div class="section-container">
+				<h2 class="section-heading">Contacts and Info</h2>
+				<p class="text-lg text-neutral-700 mb-6 max-w-xl">
+					I'm always open to discussing new opportunities, collaborations, or simply connecting. Feel free to
+					reach
+					out!
+				</p>
+				<div class="space-y-4 text-lg">
+					<p>
+						<a href="files/Resume-Manh_Tran.pdf" download class="contact-link">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path fill-rule="evenodd"
+									d="M19.5 9.75A3 3 0 0 0 16.5 6H3.75a3 3 0 0 0-3 3v8.25a3 3 0 0 0 3 3h12.75a3 3 0 0 0 3-3V9.75ZM7.5 13.5a.75.75 0 0 0 0 1.5h6a.75.75 0 0 0 0-1.5h-6Z"
+									clip-rule="evenodd" />
+							</svg>
+							Download My Resume
+						</a>
+					</p>
+					<p>
+						<a href="mailto:tran.ma@northeastern.edu" class="contact-link">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									d="M1.5 8.67v8.583A2.25 2.25 0 0 0 3.75 19.5h16.5a2.25 2.25 0 0 0 2.25-2.25V8.67m-18 0A2.25 2.25 0 0 1 3.75 6.42h16.5a2.25 2.25 0 0 1 2.25 2.25m-18 0V6.75a2.25 2.25 0 0 1 2.25-2.25h16.5a2.25 2.25 0 0 1 2.25 2.25v1.92m-18 0V5.25a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 3.75 19.5h16.5a2.25 2.25 0 0 0 2.25-2.25V5.25a2.25 2.25 0 0 0-2.25-2.25H3.75A2.25 2.25 0 0 0 1.5 5.25v3.42ZM22.5 6.75h-21" />
+							</svg>
+							tran.ma@northeastern.edu
+						</a>
+					</p>
+					<p>
+						<a href="https://github.com/manhasv" target="_blank" rel="noopener noreferrer"
+							class="contact-link">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path fill-rule="evenodd"
+									d="M12 2.026a9.981 9.981 0 0 0-3.35 19.467c.5.092.683-.217.683-.483 0-.237-.009-.86-.014-1.69-2.782.603-3.37-1.34-3.37-1.34-.454-1.151-1.11-1.458-1.11-1.458-.908-.62.069-.608.069-.608 1.004.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.089 2.91.833.091-.647.35-1.089.636-1.336-2.22-.253-4.555-1.115-4.555-4.935 0-1.09.39-1.986 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.701.113 2.516.331 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.099 2.65.64.702 1.029 1.598 1.029 2.688 0 3.828-2.339 4.681-4.566 4.925.359.309.678.92.678 1.855 0 1.336-.012 2.419-.012 2.747 0 .252.21.547.695.457A9.981 9.981 0 0 0 12 2.026Z"
+									clip-rule="evenodd" />
+							</svg>
+							github.com/manhasv
+						</a>
+					</p>
+					<p>
+						<a href="https://linkedin.com/in/manh-tran-170b34250" target="_blank" rel="noopener noreferrer"
+							class="contact-link">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path fill-rule="evenodd"
+									d="M0 1.146C0 .513.526 0 1.176 0h21.648c.65 0 1.176.513 1.176 1.146v21.708c0 .633-.526 1.146-1.176 1.146H1.176C.526 24 0 23.487 0 22.854V1.146ZM6.223 20.35V9.77h-3.9V20.35h3.9ZM4.273 8.16C2.924 8.16 2 7.158 2 5.92c0-1.24.924-2.242 2.273-2.242 1.35 0 2.274 1.002 2.274 2.242 0 1.238-.924 2.24-2.274 2.24Zm15.933 12.19h-3.896v-5.07c0-1.21-.433-2.036-1.51-2.036-1.087 0-1.733.729-2.028 1.432-.104.25-.13.593-.13.937v4.737h-3.896s.05-10.45 0-11.45h3.896v1.657c.18-.807 1.47-1.954 3.326-1.954 2.42 0 4.225 1.58 4.225 4.984v6.757Z"
+									clip-rule="evenodd" />
+							</svg>
+							linkedin.com/in/manh-tran-170b34250
+						</a>
+					</p>
+				</div>
+			</div>
+		</section>
 	</main>
+
+	<footer class="bg-neutral-900 text-white py-6 text-center">
+		<p>&copy; 2025 Tran Duc Manh. All rights reserved.</p>
+	</footer>
 
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {

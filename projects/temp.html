@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tran Duc Manh | Projects Diary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="scroll-smooth bg-neutral-50 text-neutral-800">
+    <header class="fixed top-0 left-0 right-0 bg-white bg-opacity-95 backdrop-blur-sm z-50 border-b border-neutral-100">
+        <div class="max-w-6xl mx-auto px-8 py-4 flex items-center justify-between">
+            <h1 class="text-2xl font-semibold text-neutral-900"><a href="index.html" class="nav-link">Tran Duc Manh</a></h1>
+            <nav class="space-x-6 text-base text-neutral-600">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="projects.html" class="nav-link">Projects Diary</a>
+                <a href="hobbies.html" class="nav-link">Hobbies Blog</a>
+                <a href="index.html#skills" class="nav-link">Skills</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-8 py-10 pt-28">
+        <h1>Coming soon, I'm too lazy rn</h1>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elementsToAnimate = document.querySelectorAll('#projects-diary-content h2, #projects-diary-content .content-card');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    } else {
+                        entry.target.classList.remove('fade-in');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            elementsToAnimate.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>

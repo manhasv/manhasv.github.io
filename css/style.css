@@ -163,7 +163,6 @@ body {
 }
 
 .nav-link {
-    color: #737373;
     transition-property: color;
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
