@@ -16,7 +16,7 @@
             <h1 class="text-2xl font-semibold text-neutral-900"><a href="index.html" class="nav-link">Tran Duc Manh</a></h1>
             <nav class="space-x-6 text-base text-neutral-600">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="projects.html" class="nav-link text-neutral-900 font-bold">Projects Page</a>
+                <a href="projects.html" class="nav-link text-neutral-900 font-bold">Projects Stories</a>
                 <a href="hobbies.html" class="nav-link">Hobbies Blog</a>
             </nav>
         </div>
@@ -32,6 +32,30 @@
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="content-card flex flex-col animate-fade-in-up cursor-pointer"
+                         onclick="location.href='projects/portfolio/portfolio.html';"
+                         style="animation-delay: 0.0s;">
+                        <img src="images/project thumbs/portfolio.png" alt="Resume Thumbnail"
+                             class="w-full h-48 object-cover rounded-t-lg mb-4 border-b border-neutral-200">
+                        <div class="p-4 flex-grow flex flex-col">
+                            <h4 class="text-xl font-bold text-neutral-900 mb-2">This web: manhtr.com</h4>
+                            <p class="text-sm text-neutral-600 mb-3">Started: July 2025</p>
+                            <p class="p mb-4 flex-grow">
+                                It's time I make a centralized page!
+                            </p>
+                            <div class="flex justify-between items-center mt-auto">
+                                <a href="https://github.com/manhasv/manhasv.github.io" target="_blank" rel="noopener noreferrer"
+                                    class="hover:underline flex items-center text-sm font-medium text-neutral-700"
+                                    onclick="event.stopPropagation();"> 
+                                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.043-3.356.726-4.042-1.61-4.042-1.61-.542-1.309-1.328-1.652-1.328-1.652-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.804 1.305 3.49.998.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.192.693.801.576C20.562 22.179 24 17.61 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd"/>
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-card flex flex-col animate-fade-in-up cursor-pointer"
                          onclick="location.href='projects/temp.html';"
                          style="animation-delay: 0.0s;">
                         <img src="images/project thumbs/kvstore.png" alt="Distributed Key-Value Database Thumbnail"
@@ -44,10 +68,9 @@
                                 based on a simplified Raft consensus protocol. It was a deep dive into distributed systems.
                             </p>
                             <div class="flex justify-between items-center mt-auto">
-                                <!-- Removed "Read My Diary" button -->
                                 <a href="https://github.com/manhasv/KVStore" target="_blank" rel="noopener noreferrer"
                                     class="hover:underline flex items-center text-sm font-medium text-neutral-700"
-                                    onclick="event.stopPropagation();"> <!-- IMPORTANT: Added onclick to stop propagation -->
+                                    onclick="event.stopPropagation();"> 
                                     <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.043-3.356.726-4.042-1.61-4.042-1.61-.542-1.309-1.328-1.652-1.328-1.652-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.804 1.305 3.49.998.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.192.693.801.576C20.562 22.179 24 17.61 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd"/>
                                     </svg>
@@ -70,10 +93,9 @@
                                 (a grocery store) to an existing web application using Node.js TypeScript and React.
                             </p>
                             <div class="flex justify-between items-center mt-auto">
-                                <!-- Removed "Read My Diary" button -->
                                 <a href="https://github.com/neu-cs4530/spring24-project-team-509" target="_blank" rel="noopener noreferrer"
                                     class="hover:underline flex items-center text-sm font-medium text-neutral-700"
-                                    onclick="event.stopPropagation();"> <!-- IMPORTANT: Added onclick to stop propagation -->
+                                    onclick="event.stopPropagation();">
                                     <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.043-3.356.726-4.042-1.61-4.042-1.61-.542-1.309-1.328-1.652-1.328-1.652-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.804 1.305 3.49.998.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.192.693.801.576C20.562 22.179 24 17.61 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd"/>
                                     </svg>
@@ -96,10 +118,9 @@
                                 game using Unity and C#, focusing on exploration and boss battles.
                             </p>
                             <div class="flex justify-between items-center mt-auto">
-                                <!-- Removed "Read My Diary" button -->
                                 <a href="https://github.com/manhasv/RiseFromTheAshes" target="_blank" rel="noopener noreferrer"
                                     class="hover:underline flex items-center text-sm font-medium text-neutral-700"
-                                    onclick="event.stopPropagation();"> <!-- IMPORTANT: Added onclick to stop propagation -->
+                                    onclick="event.stopPropagation();">
                                     <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.043-3.356.726-4.042-1.61-4.042-1.61-.542-1.309-1.328-1.652-1.328-1.652-1.089-.745.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.804 1.305 3.49.998.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.293-1.552 3.3-1.23 3.3-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.192.693.801.576C20.562 22.179 24 17.61 24 12c0-6.627-5.373-12-12-12z" clip-rule="evenodd"/>
                                     </svg>

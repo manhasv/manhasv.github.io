@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tran Duc Manh | About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="scroll-smooth bg-neutral-50 text-neutral-800">
+    <header class="fixed top-0 left-0 right-0 bg-white bg-opacity-95 backdrop-blur-sm z-50 border-b border-neutral-100">
+        <div class="max-w-6xl mx-auto px-8 py-4 flex items-center justify-between">
+            <h1 class="text-2xl font-semibold text-neutral-900"><a href="../../index.html" class="nav-link">Tran Duc
+                    Manh</a></h1>
+            <nav class="space-x-6 text-base text-neutral-600">
+                <a href="../../index.html" class="nav-link">Home</a>
+                <a href="../../projects.html" class="nav-link">Projects Stories</a>
+                <a href="../../hobbies.html" class="nav-link">Hobbies Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-8 py-10 pt-28">
+        <article class="blog-post content-card p-6 md:p-10 fade-in">
+            <h1 class="text-4xl font-bold text-neutral-900 mb-4 animate-fade-in-down">My Stories</h1>
+            <p class="text-neutral-600 text-sm mb-6 animate-fade-in-up">hehe</p>
+
+            <p>Actually though I haven't thought much about what
+                to share so this is a video of me dancing in the mean time</p>
+
+            <div class="video-container relative my-6"
+                style="padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+                <iframe src="https://www.youtube.com/embed/KLB2TTwT7RQ" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                    class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg">
+                </iframe>
+            </div>
+
+            <div class="back-link mt-8 animate-fade-in-up" style="animation-delay: 0.4s;">
+                <a href="../projects.html"
+                    class="bg-neutral-900 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-indigo-600 transition duration-200 ease-in-out shadow-sm flex items-center justify-center mx-auto"
+                    style="max-width: fit-content;">
+                    &larr; Back to Home
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-neutral-900 text-white py-6 text-center">
+        <p>&copy; 2025 Tran Duc Manh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elementsToAnimate = document.querySelectorAll('#projects-diary-content h2, #projects-diary-content .content-card');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    } else {
+                        entry.target.classList.remove('fade-in');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            elementsToAnimate.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>

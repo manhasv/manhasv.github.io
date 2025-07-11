@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tran Duc Manh | Projects Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="scroll-smooth bg-neutral-50 text-neutral-800">
+    <header class="fixed top-0 left-0 right-0 bg-white bg-opacity-95 backdrop-blur-sm z-50 border-b border-neutral-100">
+        <div class="max-w-6xl mx-auto px-8 py-4 flex items-center justify-between">
+            <h1 class="text-2xl font-semibold text-neutral-900"><a href="../../index.html" class="nav-link">Tran Duc Manh</a></h1>
+            <nav class="space-x-6 text-base text-neutral-600">
+                <a href="../../index.html" class="nav-link">Home</a>
+                <a href="../../projects.html" class="nav-link">Projects Stories</a>
+                <a href="../../hobbies.html" class="nav-link">Hobbies Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-8 py-10 pt-28">
+        <article class="blog-post content-card p-6 md:p-10 fade-in">
+            <h1 class="text-4xl font-bold text-neutral-900 mb-4 animate-fade-in-down">This Web: manhtr.com</h1>
+            <p class="text-neutral-600 text-sm mb-6 animate-fade-in-up">Started: July 2025</p>
+
+            <section class="mb-8 p animate-fade-in-up" style="animation-delay: 0.1s;">
+                <h2 class="text-2xl font-semibold text-neutral-900 mb-3">Description</h2>
+                <p>
+                    A 22-year-old man too tired of job applications decided to do something useful. He chose to tackle the boss anyone asks him to do: a portfolio.
+                </p>
+                <p>
+                    Actually though, this is nicer than I thought. I have this manhasv.github.io website since 2022 but I ditched it to do other stuff. Now it just dawned on me
+                    that I can just use it as a portfolio, so I decided to make it more professional and showcase my work and projects.
+                </p>
+            </section>
+
+            <section class="mb-8 p animate-fade-in-up" style="animation-delay: 0.2s;">
+                <h2 class="text-2xl font-semibold text-neutral-900 mb-3">Job Logs: Getting Started (9/7/2025)</h2>
+                <p>
+                    I started by buying the domain name on NameCheap.com for $6.69 (nice). While I was thinking about renting a server,
+                    I realized I could simply host it on github.io for free.
+                    Added a bunch of basic stuff, it looks a bit soulless right now but it's WIP.
+                    Worst thing so far is that I decided to use Tailwind CSS for styling, which I didnt use before so uhh.
+                </p>
+                <img src="firstupdate.png" alt="Screenshot of purchase"
+                    class="max-w-4xl h-auto object-cover rounded-lg my-6 border border-neutral-200 mx-auto block">
+                <p class="caption text-sm text-center text-neutral-600 mb-6">
+                    Fig 1: Bought it.
+                </p>
+            </section>
+
+            <section class="mb-8 p animate-fade-in-up" style="animation-delay: 0.3s;">
+                <h2 class="text-2xl font-semibold text-neutral-900 mb-3">Job Logs: Content Expansion (11/7/2025)</h2>
+                <p>
+                    I added a bunch of new stuff to this portfolio, including a new section for my projects stories.
+                    This section will showcase my ongoing and completed projects, providing insights into my work process and achievements.
+                    Such example is what you are reading right now.
+                    I also added a new section for my hobbies blog, where I will share my interests and activities outside of work.
+                    Maybe a section for skills later (?) idk.
+                </p>
+                <img src="secondupdate.png" alt="Screenshot of Live Server"
+                     class="w-full h-auto object-cover rounded-lg my-6 border border-neutral-200">
+                <p class="caption text-sm text-center text-neutral-600 mb-6">
+                    Fig 2: Pic on Live server
+                </p>
+            </section>
+
+            <div class="back-link mt-8 animate-fade-in-up" style="animation-delay: 0.4s;">
+                <a href="/projects.html" class="bg-neutral-900 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-indigo-600 transition duration-200 ease-in-out shadow-sm flex items-center justify-center mx-auto" style="max-width: fit-content;">
+                    &larr; Back to Projects Diary
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-neutral-900 text-white py-6 text-center">
+        <p>&copy; 2025 Tran Duc Manh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elementsToAnimate = document.querySelectorAll('#projects-diary-content h2, #projects-diary-content .content-card');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    } else {
+                        entry.target.classList.remove('fade-in');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            elementsToAnimate.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>
