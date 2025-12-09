@@ -1,0 +1,245 @@
+/* --- Variables & Reset --- */
+:root {
+    --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-bg: #fff;
+    --color-link: #333;
+    --color-accent: #d94e4e; 
+    --max-width: 900px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-link);
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+/* --- Layout Utilities --- */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header --- */
+.site-header {
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 10px;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.site-nav a {
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+.site-nav a.active, .site-nav a:hover {
+    color: var(--color-text);
+}
+
+/* --- SECTION 1: The Floating Layout --- */
+.intro-section {
+    display: block; /* Normal block layout (not flex) */
+    overflow: hidden; /* Keeps everything contained cleanly */
+    margin-bottom: 60px;
+}
+
+.page-heading {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+}
+
+.heading-text {
+    padding-bottom: 1rem;
+}
+
+/* The Container for Image + Address */
+.profile-float-container {
+    float: right;       /* This pushes it to the right */
+    width: 280px;       /* Fixed width for the sidebar area */
+    margin-left: 40px;  /* Space between the text and the image */
+    margin-bottom: 20px; /* Space at the bottom */
+}
+
+/* Style the Image */
+.profile-float-container img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px; /* Slight curve like your screenshot (or 50% for circle) */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Adds a nice shadow */
+    margin-bottom: 15px;
+}
+
+/* Style the Address text under the image */
+.address-text {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Style the Bio Text */
+.bio-text p {
+    margin-bottom: 1rem;
+    text-align: justify; /* Makes the text edges square like a newspaper */
+}
+
+/* The Subtitle (e.g. "AI Researcher...") */
+.subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* --- SECTION 2: Projects (Full Width Row Layout) --- */
+.projects-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: var(--color-accent);
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-row {
+    transition: transform 0.2s ease;
+}
+
+.project-link-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    color: inherit;
+}
+
+.project-link-wrapper:hover .project-content h3 {
+    color: var(--color-accent);
+}
+
+/* Project Image */
+.project-img {
+    flex: 0 0 200px; /* Slightly wider now since we have full page width */
+    height: 130px;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-link-wrapper:hover .project-img img {
+    transform: scale(1.05);
+}
+
+/* Project Text */
+.project-content {
+    flex: 1;
+}
+
+.project-content h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.project-content p {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* --- Footer --- */
+footer {
+    margin-top: 80px;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    border-top: 1px solid #eaeaea;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    /* Stack Bio and Profile vertically */
+    .intro-section {
+        flex-direction: column-reverse; /* Puts Bio (left) below Profile (right) on mobile? 
+                                           Usually Profile on TOP is better. 
+                                           Let's keep normal column order but flip visual order if needed. */
+        flex-direction: column; 
+        gap: 30px;
+    }
+
+    .profile-column {
+        width: 100%;
+        text-align: center;
+        order: 1; /* Force Profile to appear FIRST on mobile */
+    }
+    
+    .bio-column {
+        order: 2; /* Bio comes SECOND on mobile */
+    }
+
+    .profile-img {
+        max-width: 150px;
+    }
+
+    /* Stack Project Image and Text vertically on mobile */
+    .project-link-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        flex: none;
+    }
+}
