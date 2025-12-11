@@ -128,7 +128,7 @@ a:hover {
 .projects-section h2 {
     font-size: 1.5rem;
     margin-bottom: 30px;
-    color: var(--color-accent);
+    color: var(--color-text);
     border-bottom: 2px solid #f4f4f4;
     padding-bottom: 10px;
 }
