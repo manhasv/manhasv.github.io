@@ -195,6 +195,33 @@ a:hover {
     margin: 0;
 }
 
+/* --- Currently Section --- */
+.currently-section {
+    margin-top: 60px;
+}
+
+.currently-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: var(--color-text);
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+}
+
+.currently-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.currently-list li {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    padding-left: 1rem;
+    border-left: 2px solid #eaeaea;
+}
+
 /* --- Footer --- */
 footer {
     margin-top: 80px;
