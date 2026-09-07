@@ -31,7 +31,7 @@ h4,
 h5,
 h6 {
   color: #222;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
 }
 
 p,
@@ -46,7 +46,7 @@ dl {
 h1,
 h2,
 h3 {
-  line-height: 1.1;
+  line-height: 1;
 }
 
 h1 {
@@ -336,6 +336,9 @@ screen and (max-width: 480px) {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--paper-line);
 }
 
 .item:last-child {
@@ -380,7 +383,14 @@ screen and (max-width: 480px) {
   font-size: 1rem;
   font-weight: 500;
   color: var(--text);
-  margin: 0;
+}
+
+.item-company {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  margin: -0.05rem 0 0.5rem;
 }
 
 .item-date {
@@ -394,7 +404,7 @@ screen and (max-width: 480px) {
   font-size: 0.875rem;
   line-height: 1.45;
   color: var(--text-muted);
-  margin: 0 0 0.4rem;
+  margin: 0 0 0rem;
 }
 
 .item-tags {
@@ -414,29 +424,6 @@ screen and (max-width: 480px) {
     width: 100%;
     aspect-ratio: 16 / 9;
   }
-}
-
-.experience-item {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--paper-line);
-}
-
-.project-link {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--paper-line);
-}
-
-.project-link:hover {
-  color: inherit;
-}
-
-.project-link:hover .item-name {
-  color: var(--accent);
 }
 
 .contacts {
