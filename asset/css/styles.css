@@ -1,24 +1,29 @@
-/* Theme tokens. Dark is the default; light applies when <html data-theme="light">. */
+/* Theme tokens. Dark is the default; light applies when <html data-theme="light">.
+   Dark palette follows Alacritty's built-in default colors (the owner's terminal). */
 :root {
   color-scheme: dark;
 
-  --bg: #14171c;
-  --surface: #1c2027;
-  --line: #2c313a;
-  --paper-line: #2c313a;
-  --heading: #ecebe7;
-  --heading-soft: #d4d3cf;
-  --text: #e9e8e4;
-  --text-body: #b8bcc4;
-  --text-muted: #9a9fa8;
-  --text-faint: #7d828c;
-  --accent: #7fb0cf;
-  --accent-soft: #a6c8de;
+  --bg: #181818;          /* primary background */
+  --surface: #202020;
+  --line: #2e2e2e;
+  --paper-line: #2e2e2e;
+  --heading: #f8f8f8;     /* bright white */
+  --heading-soft: #d8d8d8;
+  --text: #d8d8d8;        /* primary foreground */
+  --text-body: #c4c4c4;
+  --text-muted: #9e9e9e;
+  --text-faint: #828482;  /* dim foreground */
+  --accent: #c55555;      /* bright red */
+  --accent-soft: #e08484; /* lighter tint for hover */
 
   --font-display: 'Fraunces', Georgia, serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: var(--font-mono);
+  --font-mono: 'Noto Sans Mono', ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+  --mono-stretch: 87.5%;  /* Noto Sans Mono width axis: 62.5% (narrowest) to 100% (normal) */
 
-  --sidebar-width: 280px;
+  --sidebar-width: 300px;
+  --page-width: 1040px;
+  --content-width: 700px;
 }
 
 :root[data-theme="light"] {
@@ -44,6 +49,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   font-family: var(--font-body);
+  font-stretch: var(--mono-stretch);
   color: var(--text-body);
   font-weight: 400;
 }
@@ -113,7 +119,7 @@ a:hover small {
 }
 
 .wrapper {
-  width: 850px;
+  width: var(--page-width);
   margin: 0 auto;
 }
 
@@ -164,7 +170,7 @@ img {
 }
 
 header {
-  width: 250px;
+  width: var(--sidebar-width);
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -187,7 +193,7 @@ header ul a strong {
 }
 
 section {
-  width: 600px;
+  width: var(--content-width);
   float: right;
   padding-bottom: 50px;
 }
@@ -204,7 +210,7 @@ hr {
 }
 
 footer {
-  width: 270px;
+  width: var(--sidebar-width);
   float: left;
   position: fixed;
   bottom: 50px;
@@ -212,7 +218,7 @@ footer {
 }
 
 @media print,
-screen and (max-width: 960px) {
+screen and (max-width: 1140px) {
 
   div.wrapper {
     width: auto;
@@ -344,7 +350,7 @@ screen and (max-width: 480px) {
 
 .tab-content>div {
   display: none;
-  max-width: 640px;
+  max-width: 100%;
   font-size: 1rem;
   color: var(--text);
 }
@@ -354,7 +360,7 @@ screen and (max-width: 480px) {
 }
 
 .tab-content h2 {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-weight: 500;
   font-size: 1.4rem;
   margin: 0 0 1rem;
@@ -420,7 +426,7 @@ screen and (max-width: 480px) {
 }
 
 .item-name {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
   color: var(--text);
@@ -542,4 +548,16 @@ screen and (max-width: 480px) {
 
 :root[data-theme="light"] .theme-toggle .icon-moon {
   display: block;
+}
+
+/* ---------- tab bar: lowercase monospace labels ---------- */
+
+.nav.nav-pills {
+  font-family: var(--font-mono);
+  gap: 1.4rem;
+}
+
+.nav-pills .nav-link {
+  font-size: 0.9rem;
+  font-weight: 400;
 }
