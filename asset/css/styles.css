@@ -795,3 +795,23 @@ screen and (max-width: 480px) {
   }
 }
 
+/* ---------- Logs tab: type tag next to the title (devlog / research log / tech log ...) ---------- */
+
+.item-title {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.log-tag {
+  font-size: 0.7rem;
+  line-height: 1;
+  padding: 3px 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
