@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PiDrone Devlog · Manh Tran</title>
+    <script>
+        // Apply saved theme before first paint. Dark is the default.
+        try {
+            if (localStorage.getItem('theme') === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        } catch (e) { }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Noto+Sans+Mono:wdth,wght@62.5..100,400..500&display=swap">
+    <link rel="stylesheet" href="../asset/css/styles.css">
+</head>
+
+<body>
+    <div class="devlog">
+        <div class="devlog-top">
+            <a href="../index.html">&larr; back</a>
+            <button class="theme-toggle" type="button" aria-label="Toggle light/dark theme"
+                title="Toggle light/dark theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM11 1h2v3h-2zm0 19h2v3h-2zM1 11h3v2H1zm19 0h3v2h-3zM4.22 5.64l1.42-1.42 2.12 2.12-1.42 1.42zm12.02 12.02 1.42-1.42 2.12 2.12-1.42 1.42zM4.22 18.36l2.12-2.12 1.42 1.42-2.12 2.12zM16.24 6.34l2.12-2.12 1.42 1.42-2.12 2.12z" />
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+            </button>
+        </div>
+
+        <h1>PiDrone</h1>
+        <p class="devlog-sub">devlog</p>
+
+        <!--
+        TEMPLATE: log block
+        Media in asset/media/devlog/
+
+        <article class="log-entry">
+            <time datetime="2026-11-07">Nov 7, 2026</time>
+            <h2>Title</h2>
+            <p>Note</p>
+            <div class="log-media">
+                <a href="../asset/media/devlog/pidrone/2026-11-07-xxxx.jpg"><img src="../asset/media/devlog/pidrone/2026-11-07-xxxx.jpg" alt="..." loading="lazy"></a>
+                <video src="../asset/media/devlog/pidrone/2026-11-07-xxxx.mp4" poster="../asset/media/devlog/pidrone/2026-11-07-xxxx-poster.jpg" controls muted loop playsinline preload="none"></video>
+            </div>
+            <p>Paragraphs.</p>
+        </article>
+        -->
+
+        <article class="log-entry">
+            <time datetime="2026-10-08">Oct 8, 2026</time>
+            <p>TODO</p>
+            <div class="log-media">
+                <video src="../asset/media/devlog/pidrone/2026-10-08-3638.mp4"
+                    poster="../asset/media/devlog/pidrone/2026-10-08-3638-poster.jpg" controls muted loop playsinline
+                    preload="none"></video>
+                <video src="../asset/media/devlog/pidrone/2026-10-08-3640.mp4"
+                    poster="../asset/media/devlog/pidrone/2026-10-08-3640-poster.jpg" controls muted loop playsinline
+                    preload="none"></video>
+                <video src="../asset/media/devlog/pidrone/2026-10-08-3641.mp4"
+                    poster="../asset/media/devlog/pidrone/2026-10-08-3641-poster.jpg" controls muted loop playsinline
+                    preload="none"></video>
+                <video src="../asset/media/devlog/pidrone/2026-10-08-3643.mp4"
+                    poster="../asset/media/devlog/pidrone/2026-10-08-3643-poster.jpg" controls muted loop playsinline
+                    preload="none"></video>
+            </div>
+        </article>
+
+        <article class="log-entry">
+            <time datetime="2026-10-01">Oct 1, 2026</time>
+            
+            <div class="log-media">
+                <a href="../asset/media/devlog/pidrone/2026-10-01-3617.jpg"><img
+                        src="../asset/media/devlog/pidrone/2026-10-01-3617.jpg" alt="PiDrone, Oct 1" loading="lazy"></a>
+                <a href="../asset/media/devlog/pidrone/2026-10-01-3618.jpg"><img
+                        src="../asset/media/devlog/pidrone/2026-10-01-3618.jpg" alt="PiDrone, Oct 1" loading="lazy"></a>
+            </div>
+        </article>
+
+        <article class="log-entry">
+            <time datetime="2026-09-25">Sep 25, 2026</time>
+            
+            <div class="log-media">
+                <a href="../asset/media/devlog/pidrone/2026-09-25-3587.jpg"><img
+                        src="../asset/media/devlog/pidrone/2026-09-25-3587.jpg" alt="PiDrone, Sep 25" loading="lazy"></a>
+                <a href="../asset/media/devlog/pidrone/2026-09-25-3588.jpg"><img
+                        src="../asset/media/devlog/pidrone/2026-09-25-3588.jpg" alt="PiDrone, Sep 25" loading="lazy"></a>
+                <a href="../asset/media/devlog/pidrone/2026-09-25-3596.jpg"><img
+                        src="../asset/media/devlog/pidrone/2026-09-25-3596.jpg" alt="PiDrone, Sep 25" loading="lazy"></a>
+            </div>
+        </article>
+
+        <article class="log-entry">
+            <time datetime="2026-09-24">Sep 24, 2026</time>
+            
+            <div class="log-media">
+                <a href="../asset/media/devlog/pidrone/2026-09-24-3580.jpg"><img
+                        src="../asset/media/devlog/pidrone/2026-09-24-3580.jpg" alt="PiDrone, Sep 24" loading="lazy"></a>
+                <a href="../asset/media/devlog/pidrone/2026-09-24-3582.jpg"><img
+                        src="../asset/media/devlog/pidrone/2026-09-24-3582.jpg" alt="PiDrone, Sep 24" loading="lazy"></a>
+            </div>
+        </article>
+    </div>
+
+    <script src="../asset/script/scale.fix.js"></script>
+</body>
+
+</html>

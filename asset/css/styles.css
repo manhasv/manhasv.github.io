@@ -381,6 +381,7 @@ screen and (max-width: 480px) {
 
 .item {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 1rem;
   padding-top: 1rem;
@@ -561,3 +562,141 @@ screen and (max-width: 480px) {
   font-size: 0.9rem;
   font-weight: 400;
 }
+
+/* ---------- devlog pages (devlog/*.html) ---------- */
+/* Single-column page; avoids <header>/<section>/<footer>, which the theme styles as the sidebar layout. */
+
+.devlog {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.devlog-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.devlog h1 {
+  font-size: 32px;
+  margin: 0 0 0.25rem;
+}
+
+.devlog-sub {
+  color: var(--text-muted);
+  margin: 0 0 2.5rem;
+}
+
+.log-entry {
+  padding: 1.5rem 0 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.log-entry time {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.log-entry h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--heading);
+  margin: 0 0 0.75rem;
+}
+
+.log-entry p {
+  color: var(--text-body);
+  margin: 0 0 1rem;
+  max-width: 70ch;
+}
+
+.log-media {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  margin: 0 0 1rem;
+}
+
+.log-media a {
+  display: block;
+}
+
+.log-media img,
+.log-media video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+  background: var(--surface);
+}
+
+.log-media video {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #000;
+}
+
+.log-media a:hover img {
+  opacity: 0.9;
+}
+
+/* Clips get bigger tiles than photos */
+.log-media:has(video) {
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+}
+
+/* ---------- click-to-load 3D viewer inside a project card ---------- */
+
+.viewer-toggle {
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.viewer-toggle:hover {
+  color: var(--accent-soft);
+}
+
+.item-viewer {
+  flex: 0 0 100%;
+}
+
+.item-viewer iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 6px;
+  background: var(--surface);
+}
+
+/* ---------- project card link row: icon + label, spaced apart ---------- */
+
+.item-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  margin: 0.6rem 0 0.35rem;
+}
+
+.item-links .project-link,
+.item-links .viewer-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.item-links svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+

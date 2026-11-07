@@ -32,7 +32,7 @@
             <h1>Manh Tran</h1>
             <p> Master Student @ <a href="https://www.brown.edu/" target="_blank" rel="noopener noreferrer" title="Brown">Brown University</a></p>
             <span>
-                <img style="max-width: 230px; width: 100%; height: auto;" src="asset/img/profile/selfie.jpg">
+                <img style="max-width: 230px; width: 100%; height: auto;" src="asset/media/profile/selfie.jpg">
             </span>
             <p class="description">
                 Computer Vision · Software · Cloud
@@ -135,10 +135,34 @@
                 </div>
 
                 <div id="projects" class="active">
-   
+
                     <article class="item">
                         <div class="item-media">
-                            <img src="asset/img/projects/3dgs.png" alt="3DGS">
+                            <img src="asset/media/devlog/pidrone/2026-10-01-3618.jpg" alt="PiDrone">
+                        </div>
+
+                        <div class="item-body">
+                            <div class="item-head">
+                                <h3 class="item-name">PiDrone</h3>
+                                <time class="item-date" datetime="2026">2026</time>
+                            </div>
+
+                            <p class="item-desc">
+                                A drone I'm currently building.
+                            </p>
+                            <div class="item-links">
+                                <a class="project-link" href="devlog/pidrone.html">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h11a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v16h11V4H6zm2 3h7v2H8V7zm0 4h7v2H8v-2z" /></svg><span>Devlog</span></a>
+                            </div>
+                            <small class="item-tags">
+                                Drone · In progress
+                            </small>
+                        </div>
+                    </article>
+
+                    <article class="item">
+                        <div class="item-media">
+                            <img src="asset/media/projects/3dgs.png" alt="3DGS">
                         </div>
 
                         <div class="item-body">
@@ -152,18 +176,26 @@
                                 recover camera poses and a sparse 3D point cloud before generating and rendering the
                                 Gaussian representation.
                             </p>
-                            <a class="project-link" href="https://github.com/manhasv/3dgs" target="_blank"
-                                rel="noopener noreferrer">Github</a>
-                            <br>
+                            <div class="item-links">
+                                <a class="project-link" href="https://github.com/manhasv/3dgs" target="_blank" rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.69-3.88-1.54-3.88-1.54-.53-1.36-1.31-1.72-1.31-1.72 -1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18.91-.25 1.89-.37 2.86-.38.97 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.25 5.68.41.35.78 1.04.78 2.1 0 1.52-.01 2.74-.01 3.11 0 .31.21.67.8.56C20.71 21.39 24 17.08 24 12 24 5.65 18.35.5 12 .5z" /></svg><span>Github</span></a>
+                                <a class="project-link" href="https://superspl.at/scene/36e49b33" target="_blank" rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h5v2H5v12h12v-5h2v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z" /></svg><span>Demo</span></a>
+                                <button class="viewer-toggle" type="button" aria-expanded="false" data-src="https://superspl.at/s?id=36e49b33">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5zm0 2.3L18.6 8 12 11.7 5.4 8 12 4.3zM5 9.7l6 3.4v6.6l-6-3.4V9.7zm8 10v-6.6l6-3.4v6.6l-6 3.4z" /></svg><span class="label">View in 3D</span></button>
+                            </div>
                             <small class="item-tags">
                                  Python · 3DGS · Colmap
                             </small>
                         </div>
+
+                        <!-- Interactive splat viewer; the iframe is only created when "View in 3D" is clicked. -->
+                        <div class="item-viewer" hidden></div>
                     </article>
                     
                     <article class="item">
                         <div class="item-media">
-                            <img src="asset/img/projects/scan.jpg" alt="scanner">
+                            <img src="asset/media/projects/scan.jpg" alt="scanner">
                         </div>
 
                         <div class="item-body">
@@ -177,9 +209,10 @@
                                 perspective correction, and applies image enhancement to produce clean scanned
                                 documents.
                             </p>
-                            <a class="project-link" href="https://github.com/manhasv/scanner" target="_blank"
-                                rel="noopener noreferrer">Github</a>  
-                            <br>
+                            <div class="item-links">
+                                <a class="project-link" href="https://github.com/manhasv/scanner" target="_blank" rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.69-3.88-1.54-3.88-1.54-.53-1.36-1.31-1.72-1.31-1.72 -1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18.91-.25 1.89-.37 2.86-.38.97 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.25 5.68.41.35.78 1.04.78 2.1 0 1.52-.01 2.74-.01 3.11 0 .31.21.67.8.56C20.71 21.39 24 17.08 24 12 24 5.65 18.35.5 12 .5z" /></svg><span>Github</span></a>
+                            </div>
                             <small class="item-tags">
                                 Python · Image Processing · Geometric Transformation · OpenCV
                             </small>
@@ -188,7 +221,7 @@
                     
                     <article class="item">
                         <div class="item-media">
-                            <img src="asset/img/projects/rfta.png" alt="rfta">
+                            <img src="asset/media/projects/rfta.png" alt="rfta">
                         </div>
 
                         <div class="item-body">
@@ -200,9 +233,10 @@
                             <p class="item-desc">
                                 Rise From The Ashes, a small indie game built in Unity with C#.
                             </p>
-                            <a class="project-link" href="https://github.com/manhasv/RiseFromTheAshes" target="_blank"
-                                rel="noopener noreferrer">Github</a>
-                            <br>
+                            <div class="item-links">
+                                <a class="project-link" href="https://github.com/manhasv/RiseFromTheAshes" target="_blank" rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.69-3.88-1.54-3.88-1.54-.53-1.36-1.31-1.72-1.31-1.72 -1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18.91-.25 1.89-.37 2.86-.38.97 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.25 5.68.41.35.78 1.04.78 2.1 0 1.52-.01 2.74-.01 3.11 0 .31.21.67.8.56C20.71 21.39 24 17.08 24 12 24 5.65 18.35.5 12 .5z" /></svg><span>Github</span></a>
+                            </div>
                             <small class="item-tags">
                                 Unity · C#
                             </small>
@@ -211,7 +245,7 @@
                 
                     <article class="item">
                         <div class="item-media">
-                            <img src="asset/img/projects/kvstore.png" alt="scanner">
+                            <img src="asset/media/projects/kvstore.png" alt="scanner">
                         </div>
 
                         <div class="item-body">
@@ -227,9 +261,10 @@
                                 injects network drops, partitions, and replica crashes to validate correctness under
                                 faults.
                             </p>
-                            <a class="project-link" href="https://github.com/manhasv/KVStore" target="_blank"
-                                rel="noopener noreferrer"> Github </a>
-                            <br>
+                            <div class="item-links">
+                                <a class="project-link" href="https://github.com/manhasv/KVStore" target="_blank" rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.69-3.88-1.54-3.88-1.54-.53-1.36-1.31-1.72-1.31-1.72 -1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18.91-.25 1.89-.37 2.86-.38.97 0 1.95.13 2.86.38 2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.25 5.68.41.35.78 1.04.78 2.1 0 1.52-.01 2.74-.01 3.11 0 .31.21.67.8.56C20.71 21.39 24 17.08 24 12 24 5.65 18.35.5 12 .5z" /></svg><span>Github</span></a>
+                            </div>
                             <small class="item-tags">
                                 Python · Raft · UDP Networking
                             </small>

@@ -46,3 +46,31 @@ if (themeToggle) {
     } catch (e) { }
   });
 }
+
+// "View in 3D": create the embedded viewer on click, remove it on close
+// (splats are heavy, so nothing loads until someone asks for it).
+document.querySelectorAll('.viewer-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const viewer = btn.closest('.item').querySelector('.item-viewer');
+    if (!viewer) return;
+
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    if (open) {
+      viewer.replaceChildren();
+      viewer.hidden = true;
+      btn.setAttribute('aria-expanded', 'false');
+      btn.querySelector('.label').textContent = 'View in 3D';
+    } else {
+      const frame = document.createElement('iframe');
+      frame.src = btn.dataset.src;
+      frame.title = 'Interactive 3D Gaussian Splatting viewer';
+      frame.allow = 'fullscreen; xr-spatial-tracking';
+      frame.allowFullscreen = true;
+      viewer.replaceChildren(frame);
+      viewer.hidden = false;
+      btn.setAttribute('aria-expanded', 'true');
+      btn.querySelector('.label').textContent = 'Hide 3D';
+    }
+  });
+});
+
