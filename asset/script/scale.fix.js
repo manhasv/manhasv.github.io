@@ -74,3 +74,38 @@ document.querySelectorAll('.viewer-toggle').forEach(btn => {
   });
 });
 
+// Home grid: play muted clips only while they're on screen (skip for reduced motion).
+const tileVideos = document.querySelectorAll('.bento video');
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  tileVideos.forEach(v => { v.controls = true; });
+} else if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.play().catch(() => { });
+      else e.target.pause();
+    });
+  }, { threshold: 0.4 });
+  tileVideos.forEach(v => io.observe(v));
+}
+
+// Home grid: the 3DGS tile swaps its image for the live splat viewer on click.
+document.querySelectorAll('.tile-viewer').forEach(tile => {
+  const open = () => {
+    if (tile.classList.contains('is-live')) return;
+    const frame = document.createElement('iframe');
+    frame.src = tile.dataset.src;
+    frame.title = 'Interactive 3D Gaussian Splatting viewer';
+    frame.allow = 'fullscreen; xr-spatial-tracking';
+    frame.allowFullscreen = true;
+    tile.querySelector('img').replaceWith(frame);
+    tile.classList.add('is-live');
+    tile.removeAttribute('role');
+    tile.removeAttribute('tabindex');
+    tile.removeAttribute('aria-label');
+  };
+  tile.addEventListener('click', open);
+  tile.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
+  });
+});
+

@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Noto+Sans+Mono:wdth,wght@62.5..100,400..500&display=swap">
-    <link rel="stylesheet" href="asset/css/styles.css?v=20261107">
+    <link rel="stylesheet" href="asset/css/styles.css?v=20261107-3">
     <link rel="stylesheet" href="asset/css/pygment_trac.css">
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
@@ -30,12 +30,11 @@
     <div class="wrapper">
         <header>
             <h1>Manh Tran</h1>
-            <p> Master Student @ <a href="https://www.brown.edu/" target="_blank" rel="noopener noreferrer" title="Brown">Brown University</a></p>
+            <p> Robotics · Computer Vision @ <a href="https://www.brown.edu/" target="_blank" rel="noopener noreferrer" title="Brown">Brown</a></p>
             <span>
                 <img style="max-width: 230px; width: 100%; height: auto;" src="asset/media/profile/selfie.jpg">
             </span>
             <p class="description">
-                Computer Vision · Software · Cloud
             </p>
 
             <h3>Relevant Links</h3>
@@ -108,7 +107,9 @@
 
         <section>
             <ul class="nav nav-pills">
-                <li class="nav-link active" data-tab="projects">Projects</li>
+                <li class="nav-link active" data-tab="home">Home</li>
+                <li class="nav-link" data-tab="projects">Projects</li>
+                <li class="nav-link" data-tab="devlog">Devlog</li>
                 <li class="nav-link" data-tab="experience">Experience</li>
                 <li class="theme-toggle-item">
                     <button class="theme-toggle" type="button" aria-label="Toggle light/dark theme"
@@ -125,7 +126,42 @@
 
             <div class="tab-content">
 
-                <div id="projects" class="active">
+                <div id="home" class="active">
+                    <p class="home-intro">Hi! I'm a graduate student at <a href="https://www.brown.edu/">Brown University</a> working in Robotics and Computer Visions working with <a href="https://h2r.cs.brown.edu/">H2R</a>, 
+                        and <a href="http://irl.cs.brown.edu/">IRL</a> labs. My current interests span mobile navigation and 3D reconstruction for robots perception.</p>
+                    
+                    <p class="home-intro">Life snippets:</p>
+                    <!-- Media grid. Clips autoplay (muted) only while on screen. -->
+                    <div class="bento">
+                        <a class="tile tile-hero" href="devlog/pidrone.html">
+                            <video src="asset/media/devlog/pidrone/2026-10-08-3641.mp4"
+                                poster="asset/media/devlog/pidrone/2026-10-08-3641-poster.jpg" muted loop playsinline
+                                preload="none"></video>
+                            <span class="tile-label">PiDrone</span>
+                        </a>
+                        <div class="tile">
+                            <video src="asset/media/devlog/2026-09-10-3480.mp4"
+                                poster="asset/media/devlog/2026-09-10-3480-poster.jpg" muted loop playsinline
+                                preload="none"></video>
+                            <span class="tile-label">Spot dancing</span>
+                        </div>
+                        <div class="tile">
+                            <img src="asset/media/devlog/2026-10-30-3717.jpg" alt="" loading="lazy">
+                            <span class="tile-label">Scanning Fuecoco</span>
+                        </div>
+                        <div class="tile tile-wide tile-viewer" role="button" tabindex="0"
+                            data-src="https://superspl.at/s?id=36e49b33" aria-label="Open the interactive 3D splat">
+                            <img src="asset/media/projects/3dgs.png" alt="" loading="lazy">
+                            <span class="tile-label">3D Splat · click to view in 3D</span>
+                        </div>
+                        <a class="tile tile-wide" href="devlog/pidrone.html">
+                            <img src="asset/media/devlog/pidrone/2026-10-01-3618.jpg" alt="" loading="lazy">
+                            <span class="tile-label">Building PiDrone</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="projects">
 
                     <article class="item">
                         <div class="item-media">
@@ -264,6 +300,28 @@
                     
                 </div>
 
+                <div id="devlog">
+                    <!-- One card per devlog page (devlog/*.html), most recently updated first. -->
+                    <article class="item">
+                        <div class="item-media">
+                            <img src="asset/media/devlog/pidrone/2026-10-08-3638-poster.jpg" alt="PiDrone devlog">
+                        </div>
+
+                        <div class="item-body">
+                            <div class="item-head">
+                                <h3 class="item-name">PiDrone</h3>
+                                <time class="item-date" datetime="2026-10-08">Oct 8, 2026</time>
+                            </div>
+
+                            <p class="item-desc">4 entries · Sep 24 – Oct 8, 2026</p>
+                            <div class="item-links">
+                                <a class="project-link" href="devlog/pidrone.html">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h11a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v16h11V4H6zm2 3h7v2H8V7zm0 4h7v2H8v-2z" /></svg><span>Read devlog</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
                 <div id="experience">
                     <div class="item-list">
                         <article class="item">
@@ -310,7 +368,7 @@
             </div>
         </section>
     </div>
-    <script src="asset/script/scale.fix.js?v=20261107"></script>
+    <script src="asset/script/scale.fix.js?v=20261107-3"></script>
 </body>
 
 </html>
