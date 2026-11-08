@@ -823,3 +823,48 @@ screen and (max-width: 480px) {
   white-space: nowrap;
 }
 
+/* ---------- sidebar profile photo: "Flip me" ---------- */
+
+#profile-pic {
+  display: block;
+  transition: transform 0.18s ease-in-out;
+}
+
+#profile-pic.is-flipping {
+  transform: perspective(600px) rotateY(90deg);
+}
+
+.profile-flip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.profile-flip[hidden] {
+  display: none;
+}
+
+.profile-flip:hover {
+  color: var(--accent);
+}
+
+.profile-flip svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+@media print {
+  .profile-flip {
+    display: none;
+  }
+}
+
