@@ -49,12 +49,14 @@ for f in "$@"; do
 done
 
 # Rewrite data-photos="..." on the profile <img> from the folder's pfp-*.jpg files.
-list=$(cd "$dir" && ls pfp-*.jpg 2>/dev/null | sed 's#^#asset/media/profile/#' | paste -sd, -)
+# Each URL gets ?v=<content hash>, so a replaced photo gets a new URL and no browser or
+# CDN cache can serve the old one (an old photo in the new 2:3 box would look squished).
+list=$(cd "$dir" && for p in pfp-*.jpg; do [ -f "$p" ] && echo "asset/media/profile/$p?v=$(md5sum "$p" | cut -c1-8)"; done | paste -sd, -)
 [ -n "$list" ] || { echo "error: no pfp-*.jpg files in $dir" >&2; exit 1; }
 grep -q 'id="profile-pic"' "$index" || { echo "error: no <img id=\"profile-pic\"> in index.html" >&2; exit 1; }
 # (id and data-photos must stay on the same line of the <img> tag)
 sed -i -E "/id=\"profile-pic\"/ s#data-photos=\"[^\"]*\"#data-photos=\"$list\"#" "$index"
-grep -q "id=\"profile-pic\" data-photos=\"$list\"" "$index" || {
+grep -qF "id=\"profile-pic\" data-photos=\"$list\"" "$index" || {
   echo "error: couldn't update data-photos in index.html; keep it right after id=\"profile-pic\" on one line" >&2
   exit 1
 }

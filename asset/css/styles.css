@@ -827,6 +827,7 @@ screen and (max-width: 480px) {
 
 #profile-pic {
   display: block;
+  object-fit: cover;   /* if a photo's shape ever differs from the 2:3 box, crop rather than squish */
   transition: transform 0.18s ease-in-out;
 }
 
