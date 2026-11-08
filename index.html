@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Noto+Sans+Mono:wdth,wght@62.5..100,400..500&display=swap">
-    <link rel="stylesheet" href="asset/css/styles.css?v=20261107-4">
+    <link rel="stylesheet" href="asset/css/styles.css?v=20261107-5">
     <link rel="stylesheet" href="asset/css/pygment_trac.css">
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
@@ -32,7 +32,18 @@
             <h1>Manh Tran</h1>
             <p> Robotics · Computer Vision @ <a href="https://www.brown.edu/" target="_blank" rel="noopener noreferrer" title="Brown">Brown</a></p>
             <span>
-                <img style="max-width: 230px; width: 100%; height: auto;" src="asset/media/profile/selfie.jpg">
+                <!-- Random profile photo on each visit. The list is maintained by tools/profile-pic.sh. -->
+                <img id="profile-pic" data-photos="asset/media/profile/pfp-headshot.jpg,asset/media/profile/pfp-outdoor.jpg,asset/media/profile/pfp-selfie.jpg" alt="Manh Tran"
+                    style="max-width: 230px; width: 100%; height: auto;">
+                <script>
+                    (function () {
+                        var img = document.getElementById('profile-pic');
+                        var list = img.dataset.photos.split(',').filter(Boolean);
+                        img.src = list[Math.floor(Math.random() * list.length)];
+                    })();
+                </script>
+                <noscript><img style="max-width: 230px; width: 100%; height: auto;" alt="Manh Tran"
+                        src="asset/media/profile/pfp-selfie.jpg"></noscript>
             </span>
             <p class="description">
             </p>
@@ -127,8 +138,8 @@
             <div class="tab-content">
 
                 <div id="home" class="active">
-                    <p class="home-intro">Hi! I'm a graduate student at <a href="https://www.brown.edu/">Brown University</a> working in Robotics and Computer Visions working with <a href="https://h2r.cs.brown.edu/">H2R</a>, 
-                        and <a href="http://irl.cs.brown.edu/">IRL</a> labs. My current interests span multi-modal teleoperations, mobile navigation and 3D reconstruction for robots perception.</p>
+                    <p class="home-intro">Hi! I'm a graduate student at <a href="https://www.brown.edu/">Brown University</a> working in Robotics and Computer Vision working with <a href="https://h2r.cs.brown.edu/">H2R</a>, 
+                        and <a href="http://irl.cs.brown.edu/">IRL</a> labs. My current interests span multi-modal teleoperations, mobile navigation and 3D reconstruction for robot perception.</p>
                     
                     <p class="home-intro">Life snippets:</p>
                     <!-- Media grid. Clips autoplay (muted) only while on screen. -->
@@ -372,7 +383,7 @@
             </div>
         </section>
     </div>
-    <script src="asset/script/scale.fix.js?v=20261107-4"></script>
+    <script src="asset/script/scale.fix.js?v=20261107-5"></script>
 </body>
 
 </html>

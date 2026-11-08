@@ -173,7 +173,15 @@ header {
   width: var(--sidebar-width);
   float: left;
   position: fixed;
+  /* Profile photos vary in height: if the sidebar outgrows the window, it scrolls on its own */
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  scrollbar-width: none;
   -webkit-font-smoothing: subpixel-antialiased;
+}
+
+header::-webkit-scrollbar {
+  display: none;
 }
 
 strong {
@@ -209,11 +217,10 @@ hr {
   margin: 0 0 20px;
 }
 
+/* The footer sits in the sidebar's flow, right under the links (it used to be pinned to
+   the bottom of the window, where it overlapped taller sidebar content). */
 footer {
-  width: var(--sidebar-width);
-  float: left;
-  position: fixed;
-  bottom: 50px;
+  margin-top: 2.5rem;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -231,6 +238,7 @@ screen and (max-width: 1140px) {
     float: none;
     position: static;
     width: auto;
+    max-height: none;
   }
 
   header {
